@@ -7,28 +7,89 @@
    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <body>
-    <header class="header">
+    <div class="content">
+        <header class="header">
     <div class="container">
-        <h1 class="text-center pb-5">Шапка сайта</h1>
-        <div class="button-container">
-            <a href="#" class="button-green">
-              Get in touch
-            </a>
+        <div class="header__wrapper">
+            <div class="header-logo">
+                <img class="header-logo__photo" src="img/logo.png" alt="Logo">
+            </div>
+            <div class="header-nav">
+                <div class="header-nav__phone">
+                    <a class="header-nav__phone-link" href="tel:+380505676767">
+                        <svg class="header-nav__phone-link--icon">
+                            <use xlink:href="../img/icons/icons.svg#phone-svg"></use>
+                        </svg>
+                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                    </a>
+                </div>
+                <div class="header-nav__log">
+                    <a class="header-nav__log-btn" href="#">Увійти</a>
+                </div>
+            </div>
         </div>
-        
     </div>
-
-    <div class="container">
-        <h1>CSS buttons example</h1>
-        <div class="button button-2">Angle bg</div>
-    </div>
-
-    <button class="btn-neon" id="neon-text">Neon Button</button>
-
 </header>
-    <main class="main">
-    </main>
+        <main class="main">
+            <section class="section section-banner">
+                <div class="container">
+                    <div class="banner__cols">
+                        <div class="banner__col banner__col_w60">
+                            <div class="advantages">
+                                <h1 class="advantages-title">Перевірити  рентген, КТ, МРТ знімки онлайн стало максимально просто з <span class="advantages-title__span">Rentgen.me</span></h1>
+                                <div class="advantages-points">
+                                    <div class="advantages-points__wgt">
+                                        <div class="advantages-points__wgt-photo">
+                                            <img src="img/doctor-point-icon.png" alt="doctors-icon">
+                                        </div>
+                                        <div class="advantages-points__wgt-description">
+                                            <div class="advantages-points__wgt-description--headline">118 лікарів</div>
+                                            <div class="advantages-points__wgt-description--txt">можуть надати консультацію онлайн</div>
+                                        </div>
+                                    </div>
+                                    <div class="advantages-points__wgt">
+                                        <div class="advantages-points__wgt-photo">
+                                            <img src="img/years-point-icon.png" alt="doctors-icon">
+                                        </div>
+                                        <div class="advantages-points__wgt-description">
+                                            <div class="advantages-points__wgt-description--headline">118 лікарів</div>
+                                            <div class="advantages-points__wgt-description--txt">можуть надати консультацію онлайн</div>
+                                        </div>
+                                    </div>
+                                    <div class="advantages-points__wgt">
+                                        <div class="advantages-points__wgt-photo">
+                                            <img src="img/time-point-icon.png" alt="doctors-icon">
+                                        </div>
+                                        <div class="advantages-points__wgt-description">
+                                            <div class="advantages-points__wgt-description--headline">118 лікарів</div>
+                                            <div class="advantages-points__wgt-description--txt">можуть надати консультацію онлайн</div>
+                                        </div>
+                                    </div>
+                                    <div class="advantages-points__wgt">
+                                        <div class="advantages-points__wgt-photo">
+                                            <img src="img/folders-point-icon.png" alt="doctors-icon">
+                                        </div>
+                                        <div class="advantages-points__wgt-description">
+                                            <div class="advantages-points__wgt-description--headline">118 лікарів</div>
+                                            <div class="advantages-points__wgt-description--txt">можуть надати консультацію онлайн</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__col banner__col_w40">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>

@@ -1,0 +1,71 @@
+.banner {
+    &__cols {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        width: 100%;
+
+
+    }
+
+    &__col_w60 {
+        @media (min-width: 992px) {
+            width: 60%;
+        }
+    }
+
+    &__col_w40 {
+        @media (min-width: 992px) {
+            width: 40%;
+        }
+    }
+}
+
+.advantages-title {
+    padding-bottom: 55px;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    color: #1A2828;
+
+    &__span {
+        color: #12D3CE;
+    }
+}
+
+.advantages-points {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__wgt {
+        display: flex;
+        width: 100%;
+        padding-bottom: 35px;
+
+        @media (min-width: 768px) {
+            width: 50%
+        }
+    }
+
+    &__wgt-photo {
+        margin-right: 15px;
+    }
+
+    &__wgt-description {
+        &--headline {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #0B0A0A;
+        }
+
+        &--txt {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #1A2828;
+        }
+    }
+}

@@ -1,4 +1,13 @@
-@import "modules/_header";
+// Base
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_reset";
 
-@import "modules/_btn-2";
-@import "modules/_neon";
+// Layout
+@import "layout/_general";
+@import "layout/_extra";
+
+// Page styles
+@import "modules/_header";
+@import "modules/_section-banner";
+@import "modules/_footer";
