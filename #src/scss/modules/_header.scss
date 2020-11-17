@@ -9,6 +9,7 @@
 
 .header-logo {
     &__photo {
+        display: block;
         width: 70px;
         height: 35px;
 
@@ -42,7 +43,7 @@
 
         &:hover {
             text-decoration: none;
-            color: red;
+            color: #1A2828;
         }
 
         &--icon {

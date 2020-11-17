@@ -1,0 +1,121 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    &__wgt {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-bottom: 15px;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 992px) {
+            width: auto;
+            padding-bottom: 0;
+        }
+
+        &:first-child {
+            width: 100%;
+            flex-direction: row;
+            align-items: flex-end;
+
+            @media (min-width: 768px) {
+                width: 50%;
+                flex-direction: column;
+                align-items: baseline;
+            }
+
+            @media (min-width: 992px) {
+                width: auto;
+            }
+        }
+    }
+
+    &__wgt-logo {
+        display: block;
+        width: 100px;
+        height: 50px;
+    }
+
+    &__wgt-title {
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        color: #0B0A0A;
+        padding-bottom: 10px;
+    }
+
+    &__wgt-txt {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        color: #8D9396;
+        padding-bottom: 5px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__wgt-link {
+        font-weight: normal;
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        color: #8D9396;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: #8D9396;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.footer_theme_grey {
+    background: #F5F5F5;
+}
+
+.footer_theme_white {
+    background: transparent;
+}
+
+.footer-question {
+    text-align: center;
+    margin: 10px 0;
+
+    &__link {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #A481DE;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: #A481DE;
+            text-decoration: none;
+        }
+    }
+}
