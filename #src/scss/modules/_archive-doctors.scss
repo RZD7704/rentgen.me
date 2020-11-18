@@ -1,0 +1,142 @@
+.archive-doctors-wgt {
+    box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: 992px) {
+        padding: 10px 35px 10px 10px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__photo {
+        margin-right: 20px;
+        width: 50%;
+
+        @media (min-width: 768px) {
+            width: 25%;
+        }
+
+        &--img {}
+    }
+
+    &__content {
+        width: 50%;
+
+        @media (min-width: 768px) {
+            width: 75%;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 10px;
+
+        @media (min-width: 768px) {
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        @media (min-width: 992px) {
+            padding-bottom: 40px;
+        }
+    }
+
+    &__head-name {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #0B0A0A;
+        padding-bottom: 5px;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    &__head-rate {
+        &--icon {
+            width: 14px;
+            height: 14px;
+
+            @media (min-width: 768px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__head-btn {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        background: #12D3CE;
+        border-radius: 17.5px;
+        padding: 7px 12px;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+
+    &__body {}
+
+    &__body-item {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+
+        &--name {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #0B0A0A;
+            margin-right: 15px;
+        }
+
+        &--txt {
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #1A2828;
+        }
+    }
+
+    &__body-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+
+        &--item {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #097B79;
+            padding: 5px 15px;
+            background: rgba(18, 211, 206, 0.2);
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &__body-more {
+        &--link {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: #8D9396;
+
+            &:hover {
+                text-decoration: none;
+                color: #8D9396;
+            }
+        }
+    }
+}
