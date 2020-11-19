@@ -6,6 +6,7 @@
 // Layout
 @import "layout/_general";
 @import "layout/_extra";
+@import "layout/_extra-profile";
 
 // Page styles
 @import "modules/_header";
@@ -18,4 +19,5 @@
 @import "modules/_single-news";
 @import "modules/_single-diagnostic";
 @import "modules/_single-doctors";
+@import "modules/_user-profile";
 @import "modules/_footer";

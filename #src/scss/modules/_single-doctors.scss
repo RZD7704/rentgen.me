@@ -1,0 +1,96 @@
+.single-doctors {
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__col {
+        width: 100%;
+
+        @media (min-width: 992px) {
+            width: 48%;
+        }
+    }
+}
+
+.single-doctors-photo {
+    &__img {
+        width: 100%;
+    }
+}
+
+.single-doctors-information {
+    &__head {
+        padding-bottom: 15px;
+
+        @media (min-width: 992px) {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__head-title {
+        font-family: $Playfair;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #363636;
+
+        @media (min-width: 992px) {
+            font-size: 24px;
+        }
+    }
+
+    &__head-rate {
+        &--icon {
+            width: 14px;
+            height: 14px;
+
+            @media (min-width: 992px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+
+        @media (min-width: 992px) {
+            padding-top: 20px;
+            border-top: 2px solid #F5F5F5;
+        }
+    }
+
+    &__wgt {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    &__wgt-headline {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        padding-right: 20px;
+        min-width: 140px;
+    }
+
+    &__wgt-desc {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+    }
+
+    &__btn {
+        text-align: center;
+        padding-top: 20px;
+
+        @media (min-width: 992px) {
+            padding-top: 50px;
+        }
+    }
+}
