@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"></head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <div class="section section-user-profile profile-mask">
+                <div class="container">
+                    <div class="general-head pt-1">
+                        <h2 class="general-head__title">Мій кабінет</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#editing-icon"></use>
+                            </svg>
+                            Редагувати
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="profile-mask__mobile-head-wrapper">
+                                <div class="profile-mask__photo">
+                                    <img class="profile-mask__photo-img" src="img/doctor-image-1.png" alt="User Photo">
+                                </div>
+                                <div class="profile-mask__head d-lg-none">
+                                    <div class="profile-mask__head-item">
+                                        <h3 class="profile-mask__head-name pb-0">Нестуля Катерина Ігорівна</h3>
+                                        <div class="profile-mask__head-rate">
+                                            <svg class="profile-mask__head-rate--icon">
+                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                            </svg>
+                                            <svg class="profile-mask__head-rate--icon">
+                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                            </svg>
+                                            <svg class="profile-mask__head-rate--icon">
+                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                            </svg>
+                                            <svg class="profile-mask__head-rate--icon">
+                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                            </svg>
+                                            <svg class="profile-mask__head-rate--icon">
+                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-mask__nav d-none d-lg-flex">
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
+                                        </svg>
+                                        Мої звернення
+                                        <span class="profile-mask__nav-link--num">(4)</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
+                                        </svg>
+                                        Мій баланс
+                                        <span class="profile-mask__nav-link--num">800$</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link active" href="doctor-profile-comments.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#message-icon"></use>
+                                        </svg>
+                                        Коментарі
+                                        <span class="profile-mask__nav-link--num">(1)</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="#">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                        </svg>
+                                        Статистика
+                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="profile-mask__head d-none d-lg-flex">
+                                <div class="profile-mask__head-item">
+                                    <h3 class="profile-mask__head-name">Лавренко Микола Генадійович</h3>
+                                    <div class="profile-mask__head-rate">
+                                        <svg class="profile-mask__head-rate--icon">
+                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                        </svg>
+                                        <svg class="profile-mask__head-rate--icon">
+                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                        </svg>
+                                        <svg class="profile-mask__head-rate--icon">
+                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                        </svg>
+                                        <svg class="profile-mask__head-rate--icon">
+                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                        </svg>
+                                        <svg class="profile-mask__head-rate--icon">
+                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-mask__list">
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Стаж роботи:</div>
+                                    <div class="profile-mask__list-desc">9 років</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Місто:</div>
+                                    <div class="profile-mask__list-desc">Полтава</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Місце роботи:</div>
+                                    <div class="profile-mask__list-desc">УМСА</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Спеціалізація:</div>
+                                    <div class="profile-mask__list-desc">лікар радіолог, рентгенолог ІІ категорії</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Діагностики:</div>
+                                    <div class="profile-mask__list-desc">КТ, МРТ</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Про лікаря:</div>
+                                    <div class="profile-mask__list-desc">Опис відсутній</div>
+                                </div>
+                            </div>
+                            <div class="profile-mask__nav d-lg-none pt-2">
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
+                                        </svg>
+                                        Мої звернення
+                                        <span class="profile-mask__nav-link--num">(4)</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
+                                        </svg>
+                                        Мій баланс
+                                        <span class="profile-mask__nav-link--num">800$</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link active" href="doctor-profile-comments.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#message-icon"></use>
+                                        </svg>
+                                        Коментарі
+                                        <span class="profile-mask__nav-link--num">(1)</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="#">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                        </svg>
+                                        Статистика
+                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="profile-mask__filter pb-4 pt-4">
+                                <div class="profile-mask__subtitle">Оберіть відправника:</div>
+                                <button class="profile-mask__filter-btn active" type="button">Всі</button>
+                                <button class="profile-mask__filter-btn" type="button">Медичний центр</button>
+                                <button class="profile-mask__filter-btn" type="button">Пацієнт</button>
+                            </div>
+                            <div class="mask-search">
+                                <div class="mask-search__field">
+                                    <form class="mask-search__field-form" action="#">
+                                        <button class="mask-search__field-btn" type="submit">
+                                            <svg class="mask-search__field-btn--icon">
+                                                <use xlink:href="img/icons/icons.svg#search-input-btn-icon"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="mask-search__field-input" type="text" placeholder="шукати пацієнта">
+                                    </form>
+                                </div>
+                                <div class="mask-search__filter">
+                                    <button class="mask-search__filter-btn" type="button">
+                                        <svg class="mask-search__filter-btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#search-sort-btn-icon"></use>
+                                        </svg>
+                                        Cпочатку давніші
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mask-comments">
+                                <div class="mask-comments__wgt">
+                                    <div class="mask-comments__wgt-photo">
+                                        <img class="mask-comments__wgt-img" src="img/user-image-1.png" alt="User">
+                                    </div>
+                                    <div class="mask-comments__wgt-desc">
+                                        <div class="mask-comments__wgt-head">
+                                            <div class="mask-comments__wgt-name">Марченко Аліна Віталівна</div>
+                                            <div class="mask-comments__wgt-date">11 Apr 2020, 18:23</div>
+                                        </div>
+                                        <div class="mask-comments__wgt-body">
+                                            <div class="mask-comments__wgt-type">
+                                                Тип діагностики:
+                                                <span class="mask-comments__wgt-type--desc">Рентген знімок</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    @@include('_footer.html')
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
