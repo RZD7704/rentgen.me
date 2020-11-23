@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Chart.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+   
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav__phone">
+                    <a class="header-nav__phone-link" href="tel:+380505676767">
+                        <svg class="header-nav__phone-link--icon">
+                            <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                        </svg>
+                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                    </a>
+                </div>
+                <div class="header-nav__log">
+                    <a class="header-nav__log-btn" href="chief-doctor-profile-statistic.html">Увійти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="section section-chief-open-statistic">
+                <div class="container">
+                    <div class="general-head pt-4">
+                        <h2 class="general-head__title">Статистика виконання роботи</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                    <div class="row chief-open-statistic">
+                        <div class="col-lg-4">
+                            <div class="chief-open-statistic__nav">
+                                <div class="chief-open-statistic__nav-item">
+                                    <a class="chief-open-statistic__nav-link active" href="chief-doctor-open-statistic.html">
+                                        <svg class="chief-open-statistic__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#chief-icon"></use>
+                                        </svg>
+                                        Показники опрацювань                                        
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="chief-open-statistic__head">
+                                <div class="chief-open-statistic__head-title">Показники опрацювань</div>
+                            </div>
+                            <div class="chief-statistic">
+                                <div class="chief-statistic__col chief-statistic__col_w_35 chief-statistic__wgt-wrapper">
+                                    <div class="chief-statistic__wgt">
+                                        <div class="chief-statistic__wgt-title">Опрацьовано:</div>
+                                        <div class="chief-statistic__wgt-num chief-statistic__wgt-num_theme_green">5</div>
+                                    </div>
+                                    <div class="chief-statistic__wgt">
+                                        <div class="chief-statistic__wgt-title">Неопрацьовано:</div>
+                                        <div class="chief-statistic__wgt-num chief-statistic__wgt-num_theme_purp">3</div>
+                                    </div>
+                                </div>
+                                <div class="chief-statistic__col chief-statistic__col_w_65">
+                                    <div class="doughnat-block">
+                                        <div class="doughnat-block__title">Співвідношення звернень</div>
+                                        <div class="doughnat-block__chart position-relative">
+                                            <canvas class="doughnat-block__chart-elem" id="chief-doughnat-chart" width="40" height="15"></canvas>
+                                            <div class="doughnat-block__chart-txt">8
+                                                Всього</div>
+                                        </div>
+                                        <div class="doughnat-block__points">
+                                            <div class="doughnat-block__points-wgt">
+                                                <div class="doughnat-block__points-wgt--color doughnat-block__points-wgt--color_theme_green"></div>
+                                                <div class="doughnat-block__points-wgt--name">Опрацьовані</div>
+                                            </div>
+                                            <div class="doughnat-block__points-wgt">
+                                                <div class="doughnat-block__points-wgt--color doughnat-block__points-wgt--color_theme_purp"></div>
+                                                <div class="doughnat-block__points-wgt--name">Не опрацьовані</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chief-profiles">
+                                <div class="swiper-container chief-profiles__swiper">
+                                    <div class="swiper-wrapper chief-profiles__wrapper">
+                                        <div class="swiper-slide chief-profiles__slide">
+                                            <div class="chief-slide">
+                                                <div class="chief-slide__photo">
+                                                    <img class="chief-slide__photo-img" src="img/user-image-1.png" alt="User">
+                                                </div>
+                                                <div class="chief-slide__description">
+                                                    <div class="chief-slide__name">Беденко Тетяна</div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Неопрацьовано:</div>
+                                                        <div class="chief-slide__item-num">2/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Термінові:</div>
+                                                        <div class="chief-slide__item-num">0/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Була в мережі:</div>
+                                                        <div class="chief-slide__item-num">вчора</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide chief-profiles__slide">
+                                            <div class="chief-slide">
+                                                <div class="chief-slide__photo">
+                                                    <img class="chief-slide__photo-img" src="img/user-image-1.png" alt="User">
+                                                </div>
+                                                <div class="chief-slide__description">
+                                                    <div class="chief-slide__name">Беденко Тетяна</div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Неопрацьовано:</div>
+                                                        <div class="chief-slide__item-num">2/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Термінові:</div>
+                                                        <div class="chief-slide__item-num">0/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Була в мережі:</div>
+                                                        <div class="chief-slide__item-num">вчора</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide chief-profiles__slide">
+                                            <div class="chief-slide">
+                                                <div class="chief-slide__photo">
+                                                    <img class="chief-slide__photo-img" src="img/user-image-1.png" alt="User">
+                                                </div>
+                                                <div class="chief-slide__description">
+                                                    <div class="chief-slide__name">Беденко Тетяна</div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Неопрацьовано:</div>
+                                                        <div class="chief-slide__item-num">2/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Термінові:</div>
+                                                        <div class="chief-slide__item-num">0/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Була в мережі:</div>
+                                                        <div class="chief-slide__item-num">вчора</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide chief-profiles__slide">
+                                            <div class="chief-slide">
+                                                <div class="chief-slide__photo">
+                                                    <img class="chief-slide__photo-img" src="img/user-image-1.png" alt="User">
+                                                </div>
+                                                <div class="chief-slide__description">
+                                                    <div class="chief-slide__name">Беденко Тетяна</div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Неопрацьовано:</div>
+                                                        <div class="chief-slide__item-num">2/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Термінові:</div>
+                                                        <div class="chief-slide__item-num">0/10</div>
+                                                    </div>
+                                                    <div class="chief-slide__item">
+                                                        <div class="chief-slide__item-status">Була в мережі:</div>
+                                                        <div class="chief-slide__item-num">вчора</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <div class="footer_theme_grey">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wgt">
+                    <a href="index.html">
+                        <img class="footer__wgt-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                    </a>
+                    <div class="footer__wgt-txt pb-1">©TM 2020. All right reserved.</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Контакти</div>
+                    <a class="footer__wgt-link" href="tel:+380502770153">+38 (050) 277 01 53</a>
+                    <a class="footer__wgt-link" href="#">Телеграм</a>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Локація</div>
+                    <div class="footer__wgt-txt">Полтава, Гоголя, 12</div>
+                    <div class="footer__wgt-txt">офіс 302</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Соціальні мережі</div>
+                    <a class="footer__wgt-link" href="#">Інстаграм</a>
+                    <a class="footer__wgt-link" href="#">Фейсбук</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_theme_white">
+        <div class="container">
+            <div class="footer-question">
+                <a class="footer-question__link" href="#">Часті запитання</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

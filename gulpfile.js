@@ -13,11 +13,15 @@ let path = {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css:  [
             "node_modules/bootstrap/dist/css/bootstrap.css",
+            "node_modules/chart.js/dist/Chart.css",
+            "node_modules/swiper/swiper-bundle.min.css",
             source_folder + "/scss/style.scss"
         ],
         js: [
             "node_modules/jquery/dist/jquery.min.js",
             "node_modules/bootstrap/dist/js/bootstrap.js",
+            "node_modules/chart.js/dist/Chart.js",
+            "node_modules/swiper/swiper-bundle.min.js",
             source_folder + "/js/script.js"
         ],
         img:  source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
