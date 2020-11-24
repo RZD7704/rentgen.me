@@ -414,6 +414,10 @@ body {
   max-width: 230px;
 }
 
+.profile-mask__list-headline.max-width {
+  max-width: 100%;
+}
+
 .profile-mask__list-desc {
   font-weight: normal;
   font-size: 16px;
@@ -523,6 +527,56 @@ body {
 .mask-search__filter-btn--icon {
   width: 20px;
   height: 20px;
+}
+
+.warning-status {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  margin-top: 15px;
+}
+
+.warning-status__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.warning-message {
+  box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.warning-message__headline {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #E84917;
+}
+
+.warning-message__description {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+}
+
+.warning-message__description--link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #12D3CE;
+}
+
+.warning-message__description--link:hover {
+  color: #12D3CE;
 }
 
 .header__wrapper {
@@ -1598,6 +1652,11 @@ body {
   color: #1A2828;
 }
 
+.balance-adding {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .mask-comments {
   margin-top: 20px;
 }
@@ -1669,6 +1728,54 @@ body {
   background: rgba(89, 226, 226, 0.1);
   border-radius: 24px;
   padding: 20px;
+}
+
+.mask-tarifs {
+  display: flex;
+  margin-top: 30px;
+}
+
+.mask-tarifs__services {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.mask-tarifs__services-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  padding-bottom: 10px;
+}
+
+.mask-tarifs__services-name {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  padding-bottom: 10px;
+}
+
+.mask-tarifs__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.mask-tarifs__price-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  padding-bottom: 10px;
+}
+
+.mask-tarifs__price-num {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #12D3CE;
+  padding-bottom: 10px;
 }
 
 .chief-open-statistic__nav {
@@ -1852,13 +1959,43 @@ body {
   padding-top: 20px;
 }
 
-.chief-profiles__wrapper {
-  padding: 1px 2px;
-}
-
 .chief-profiles__slide {
   padding: 15px;
-  box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+  border: 1px solid rgba(204, 203, 203, 0.4);
+}
+
+.chief-profiles__btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #A481DE;
+  border-radius: 50%;
+  z-index: 999;
+  transition: all 1s;
+}
+
+.chief-profiles__btn--icon {
+  width: 12px;
+  height: 12px;
+}
+
+.chief-profiles__btn.swiper-button-disabled {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.chief-profiles__btn-next {
+  right: 5px;
+}
+
+.chief-profiles__btn-prev {
+  left: 5px;
+  transform: rotate(-180deg);
 }
 
 .chief-slide {
@@ -2014,6 +2151,10 @@ body {
 
   .profile-mask__list-wgt {
     flex-direction: row;
+  }
+
+  .profile-mask__list-wgt_column {
+    flex-direction: column;
   }
 
   .advantages {

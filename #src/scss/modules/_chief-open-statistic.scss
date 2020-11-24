@@ -289,13 +289,48 @@
 
     &__swiper {}
 
-    &__wrapper {
-        padding: 1px 2px;
-    }
+    &__wrapper {}
 
     &__slide {
         padding: 15px;
-        box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+        // box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+        border: 1px solid rgba(204, 203, 203, 0.4);
+    }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #A481DE;
+        border-radius: 50%;
+        z-index: 999;
+        transition: all 1s;
+
+
+        &--icon {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__btn.swiper-button-disabled {
+        // display: none;
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    &__btn-next {
+        right: 5px;
+    }
+
+    &__btn-prev {
+        left: 5px;
+        transform: rotate(-180deg);
     }
 }
 

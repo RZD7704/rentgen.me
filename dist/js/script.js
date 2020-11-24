@@ -104,6 +104,11 @@ window.onload = function() {
                 slidesPerView: 2,
                 spaceBetweenSlides: 20
             }
-        }
-      });
+        },
+        navigation: {
+            nextEl: '.chief-profiles__btn-next',
+            prevEl: '.chief-profiles__btn-prev',
+        },
+    });
+
 }  
