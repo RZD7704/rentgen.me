@@ -39,7 +39,7 @@
     </div>
 </header>
         <main class="main">
-            <section class="section section-user-profile profile-mask">
+            <div class="section section-user-profile profile-mask">
                 <div class="container">
                     <div class="general-head pt-1">
                         <h2 class="general-head__title">Мій кабінет</h2>
@@ -89,6 +89,11 @@
                                         <span class="profile-mask__nav-link--num">(4)</span>
                                     </a>
                                 </div>
+                                <div class="profile-mask__nav-open-item">
+                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                        Відкрите звернення
+                                    </a>
+                                </div>
                                 <div class="profile-mask__nav-item">
                                     <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
@@ -108,22 +113,12 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="doctor-profile-statistic.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
                                         </svg>
                                         Статистика
                                         <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="profile-mask__chief-nav d-none d-lg-flex">
-                                <div class="profile-mask__chief-nav-item">
-                                    <a class="profile-mask__chief-nav-link" href="chief-doctor-open-statistic.html">
-                                        <svg class="profile-mask__chief-nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#chief-icon"></use>
-                                        </svg>
-                                        Показники опрацювань                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
                             </div>
@@ -187,6 +182,11 @@
                                         <span class="profile-mask__nav-link--num">(4)</span>
                                     </a>
                                 </div>
+                                <div class="profile-mask__nav-open-item">   
+                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                        Відкрите звернення
+                                    </a>
+                                </div>
                                 <div class="profile-mask__nav-item">
                                     <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
@@ -206,7 +206,7 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="doctor-profile-statistic.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
                                         </svg>
@@ -215,33 +215,161 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="profile-mask__chief-nav d-lg-none">
-                                <div class="profile-mask__chief-nav-item">
-                                    <a class="profile-mask__chief-nav-link" href="chief-doctor-open-statistic.html">
-                                        <svg class="profile-mask__chief-nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#chief-icon"></use>
-                                        </svg>
-                                        Показники опрацювань                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="profile-mask__filter pb-4 pt-4">
-                                <div class="profile-mask__subtitle">Діагностика:</div>
+                            <div class="profile-mask__title">Мої звернення</div>
+                            <div class="profile-mask__filter">
+                                <div class="profile-mask__subtitle">Оберіть статус:</div>
                                 <button class="profile-mask__filter-btn active" type="button">Всі</button>
-                                <button class="profile-mask__filter-btn" type="button">КТ</button>
-                                <button class="profile-mask__filter-btn" type="button">МРТ</button>
-                                <button class="profile-mask__filter-btn" type="button">Рентген</button>
-                                <button class="profile-mask__filter-btn" type="button">Рентген</button>
+                                <button class="profile-mask__filter-btn" type="button">Опрацьовані</button>
+                                <button class="profile-mask__filter-btn" type="button">Неопрацьовані</button>
+                                <button class="profile-mask__filter-btn" type="button">Термінові</button>
                             </div>
-                           <div class="mask-statistic">
-                                <div class="mask-statistic__wrapper">
-                                    <canvas id="chart-chief"></canvas>
+                            <div class="profile-mask__filter pb-4">
+                                <div class="profile-mask__subtitle">Оберіть відправника:</div>
+                                <button class="profile-mask__filter-btn" type="button">Медичний центр</button>
+                                <button class="profile-mask__filter-btn" type="button">Пацієнт</button>
+                            </div>
+                            <div class="mask-search">
+                                <div class="mask-search__field">
+                                    <form class="mask-search__field-form" action="#">
+                                        <button class="mask-search__field-btn" type="submit">
+                                            <svg class="mask-search__field-btn--icon">
+                                                <use xlink:href="img/icons/icons.svg#search-input-btn-icon"></use>
+                                            </svg>
+                                        </button>
+                                        <input class="mask-search__field-input" type="text" placeholder="шукати пацієнта">
+                                    </form>
                                 </div>
-                           </div>
+                                <div class="mask-search__filter">
+                                    <button class="mask-search__filter-btn" type="button">
+                                        <svg class="mask-search__filter-btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#search-sort-btn-icon"></use>
+                                        </svg>
+                                        Cпочатку давніші
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mask-appeal">
+                                <div class="mask-appeal__wgt mt-3">
+                                    <a class="mask-appeal__wgt-link" href="doctor-appeal-open.html">
+                                        <div class="mask-appeal__wgt-content">
+                                            <div class="mask-appeal__wgt-photo">
+                                                <img class="mask-appeal__wgt-photo--img" src="img/user-image-1.png" alt="Doctor">
+                                            </div>
+                                            <div class="mask-appeal__wgt-desc">
+                                                <div class="mask-appeal__wgt-head">
+                                                    <div class="mask-appeal__wgt-head--name">Левченко Микола Генадійович</div>
+                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
+                                                </div>
+                                                <div class="mask-appeal-list">
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
+                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
+                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
+                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mask-appeal__mark">
+                                        <svg class="mask-appeal__mark--icon">
+                                            <use xlink:href="img/icons/icons.svg#mark-icon-green"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="mask-appeal__wgt mt-3">
+                                    <a class="mask-appeal__wgt-link" href="#">
+                                        <div class="mask-appeal__wgt-content">
+                                            <div class="mask-appeal__wgt-photo">
+                                                <img class="mask-appeal__wgt-photo--img" src="img/medcenter-image-1.png" alt="Doctor">
+                                            </div>
+                                            <div class="mask-appeal__wgt-desc">
+                                                <div class="mask-appeal__wgt-head">
+                                                    <div class="mask-appeal__wgt-head--name">Марченко Аліна Віталівна</div>
+                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
+                                                </div>
+                                                <div class="mask-appeal-list">
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
+                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
+                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
+                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mask-appeal__mark">
+                                        <svg class="mask-appeal__mark--icon">
+                                            <use xlink:href="img/icons/icons.svg#mark-icon-purp"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="mask-appeal__wgt mt-3">
+                                    <a class="mask-appeal__wgt-link" href="#">
+                                        <div class="mask-appeal__wgt-content">
+                                            <div class="mask-appeal__wgt-photo">
+                                                <img class="mask-appeal__wgt-photo--img" src="img/doctor-image-3.png" alt="Doctor">
+                                            </div>
+                                            <div class="mask-appeal__wgt-desc">
+                                                <div class="mask-appeal__wgt-head">
+                                                    <div class="mask-appeal__wgt-head--name">Клініка “Мій Лікар”</div>
+                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
+                                                </div>
+                                                <div class="mask-appeal-list">
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
+                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
+                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
+                                                    </div>
+                                                    <div class="mask-appeal-list__item">
+                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
+                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="mask-appeal__mark">
+                                        <svg class="mask-appeal__mark--icon">
+                                            <use xlink:href="img/icons/icons.svg#mark-icon-grey"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="mask-appeal__points mb-3">
+                                    <div class="mask-appeal__points-item">
+                                        <div class="mask-appeal__points-item--point mask-appeal__points-item--point_theme_green"></div>
+                                        <div class="mask-appeal__points-item--txt">Опрацьовані</div>
+                                    </div>
+                                    <div class="mask-appeal__points-item">
+                                        <div class="mask-appeal__points-item--point  mask-appeal__points-item--point_theme_grey"></div>
+                                        <div class="mask-appeal__points-item--txt">Опрацьовані</div>
+                                    </div>
+                                </div>
+                                <div class="mask-appeal__nav">
+                                    <button class="mask-appeal__nav-btn" type="button">Попередні звернення</button>
+                                    <button class="mask-appeal__nav-btn active" type="button">Наступні звернення</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
     </div>
 

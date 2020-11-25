@@ -32,7 +32,7 @@
                     </a>
                 </div>
                 <div class="header-nav__log">
-                    <a class="header-nav__log-btn" href="doctor-appeal-open-done.html">Увійти</a>
+                    <a class="header-nav__log-btn" href="doctor-appeal-open.html">Увійти</a>
                 </div>
             </div>
         </div>
@@ -42,35 +42,31 @@
             <div class="section section-user-profile profile-mask">
                 <div class="container">
                     <div class="general-head pt-1">
-                        <h2 class="general-head__title">Мій профіль</h2>
-                        <a class="general-head__btn" href="#">
-                            <svg class="general-head__btn-icon">
-                                <use xlink:href="img/icons/icons.svg#editing-icon"></use>
-                            </svg>
-                            Редагувати
-                        </a>
+                        <h2 class="general-head__title">Відкрите звернення</h2>
+                        <div class="general-head__btns d-flex">
+                            <a class="general-head__btn" href="#">
+                                <svg class="general-head__btn-icon">
+                                    <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                                </svg>
+                                Повернутися
+                            </a>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-4">
                             <div class="profile-mask__mobile-head-wrapper">
                                 <div class="profile-mask__photo">
-                                    <img class="profile-mask__photo-img" src="img/medcenter-image-1.png" alt="User Photo">
+                                    <img class="profile-mask__photo-img" src="img/user-image-1.png" alt="User Photo">
                                 </div>
                                 <div class="profile-mask__head d-lg-none">
                                     <div class="profile-mask__head-item">
-                                        <h3 class="profile-mask__head-name pb-3">Медичний центр “Мій лікар”</h3>
-                                        <div class="profile-mask__head-item d-none d-md-block d-lg-none">
-                                            <a class="main-btn" href="#">Створити звернення</a>
-                                        </div>
+                                        <h3 class="profile-mask__head-name pb-0">Марченко Аліна Віталівна</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-mask__head-item d-flex d-md-none justify-content-center">
-                                <a class="main-btn" href="#">Створити звернення</a>
-                            </div>
                             <div class="profile-mask__nav d-none d-lg-flex">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -78,8 +74,13 @@
                                         <span class="profile-mask__nav-link--num">(4)</span>
                                     </a>
                                 </div>
+                                <div class="profile-mask__nav-open-item">
+                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                        Відкрите звернення
+                                    </a>
+                                </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="medcenter-profile-balance.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#balance-icon"></use>
                                         </svg>
@@ -88,7 +89,7 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
@@ -97,11 +98,11 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-tarifs.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
                                         <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#tarifs-icon"></use>
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
                                         </svg>
-                                        Тарифи
+                                        Статистика
                                         <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
@@ -110,13 +111,10 @@
                         <div class="col-12 col-lg-8">
                             <div class="profile-mask__head d-none d-lg-flex">
                                 <div class="profile-mask__head-item">
-                                    <h3 class="profile-mask__head-name">Медичний центр “Мій лікар”</h3>
-                                </div>
-                                <div class="profile-mask__head-item">
-                                    <a class="main-btn" href="#">Створити звернення</a>
+                                    <h3 class="profile-mask__head-name">Марченко Аліна Віталівна</h3>
                                 </div>
                             </div>
-                            <!-- <div class="profile-warning">
+                            <div class="profile-warning">
                                 <div class="warning-status">
                                     <svg class="warning-status__icon">
                                         <use xlink:href="img/icons/icons.svg#warning-icon"></use>
@@ -127,36 +125,32 @@
                                     <div class="warning-message__headline">Зверніть увагу! </div>
                                     <div class="warning-message__description">Щоб розпочати роботу з сервісом <a class="warning-message__description--link" href="#">rentgen.me</a> потрібно <a class="warning-message__description--link" href="#">грати на бубні</a> або зателефонувати за номером <a class="warning-message__description--link" href="tel:+380663107870">+38 066 310 78 70</a> для укладення договору.</div>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="profile-mask__list">
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Місто:</div>
-                                    <div class="profile-mask__list-desc">Полтава</div>
+                                    <div class="profile-mask__list-headline">Статус звернення:</div>
+                                    <div class="profile-mask__list-desc">Створено</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Адреса:</div>
-                                    <div class="profile-mask__list-desc">м. Полтава вул. Сінна 3 </div>
+                                    <div class="profile-mask__list-headline">Перередній діагноз:</div>
+                                    <div class="profile-mask__list-desc">Відсутній</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">ПІБ директора:</div>
-                                    <div class="profile-mask__list-desc">Матковський Юрій Володимирович</div>
+                                    <div class="profile-mask__list-headline">Тип діагностики:</div>
+                                    <div class="profile-mask__list-desc">рентген</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">ІПН або ЄДРПОУ</div>
-                                    <div class="profile-mask__list-desc">404956789</div>
-                                </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">IBAN</div>
-                                    <div class="profile-mask__list-desc">E67890</div>
+                                    <div class="profile-mask__list-headline">Стать:</div>
+                                    <div class="profile-mask__list-desc">жіноча</div>
                                 </div>
                                 <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
-                                    <div class="profile-mask__list-headline max-width">Медична інформаційна система</div>
-                                    <div class="profile-mask__list-desc">E67890</div>
+                                    <div class="profile-mask__list-headline max-width pb-2">Посилання</div>
+                                    <div class="profile-mask__list-desc"> <a class="profile-mask__list-desc--link" href="#">https://www.behance.net...</a></div>
                                 </div>
                             </div>
                             <div class="profile-mask__nav d-lg-none pt-2">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -164,8 +158,13 @@
                                         <span class="profile-mask__nav-link--num">(4)</span>
                                     </a>
                                 </div>
+                                <div class="profile-mask__nav-open-item">   
+                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                        Відкрите звернення
+                                    </a>
+                                </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="medcenter-profile-balance.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#balance-icon"></use>
                                         </svg>
@@ -174,7 +173,7 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
@@ -183,91 +182,114 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-tarifs.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
                                         <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#tarifs-icon"></use>
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
                                         </svg>
-                                        Тарифи
+                                        Статистика
                                         <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
                             </div>
-                            <div class="balance-adding pt-3">
-                                <button class="main-btn" type="button" data-toggle="modal" data-target="#balanceModal">Поповнити баланс</button>
-                            </div>
-                            <div class="profile-mask__filter pb-4 pt-4">
-                                <div class="profile-mask__subtitle">Оберіть відправника:</div>
-                                <button class="profile-mask__filter-btn active" type="button">Всі</button>
-                                <button class="profile-mask__filter-btn" type="button">За цей місяць</button>
-                            </div>
-                            <div class="mask-search">
-                                <div class="mask-search__field">
-                                    <form class="mask-search__field-form" action="#">
-                                        <button class="mask-search__field-btn" type="submit">
-                                            <svg class="mask-search__field-btn--icon">
-                                                <use xlink:href="img/icons/icons.svg#search-input-btn-icon"></use>
-                                            </svg>
-                                        </button>
-                                        <input class="mask-search__field-input" type="text" placeholder="шукати пацієнта">
+                            <div class="mask-open">
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Результати обстеження</div>
+                                    <a class="mask-open__head-btn" href="#">
+                                        <svg class="mask-open__head-btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#download-arr-icon"></use>
+                                        </svg>
+                                        Завантажити
+                                    </a>
+                                </div>
+                                <div class="mask-open__body">
+                                    <div class="appeal-results">
+                                        <div class="appeal-results__wgt">
+                                            <a class="appeal-results__wgt-link" href="#">
+                                                <svg class="appeal-results__wgt-link--icon">
+                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
+                                                </svg>
+                                                Результати
+                                            </a>
+                                            <div class="appeal-results__delete">
+                                                <svg class="appeal-results__delete--icon">
+                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="appeal-results__wgt">
+                                            <a class="appeal-results__wgt-link" href="#">
+                                                <svg class="appeal-results__wgt-link--icon">
+                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
+                                                </svg>
+                                                Результати
+                                            </a>
+                                            <div class="appeal-results__delete">
+                                                <svg class="appeal-results__delete--icon">
+                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="appeal-results__wgt">
+                                            <input type="file" name="file" id="file" class="inputfile" />
+                                            <label class="appeal-results__wgt-file" for="file">
+                                                <svg class="appeal-results__wgt-file--icon">
+                                                    <use xlink:href="img/icons/icons.svg#import-files-icon"></use>
+                                                </svg>
+                                                Прикріпити файл
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Діагноз:</div>
+                                </div>
+                                <div class="mask-open__body section-border pb-4">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Введіть діагноз"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
                                     </form>
                                 </div>
-                                <div class="mask-search__filter">
-                                    <button class="mask-search__filter-btn" type="button">
-                                        <svg class="mask-search__filter-btn--icon">
-                                            <use xlink:href="img/icons/icons.svg#search-sort-btn-icon"></use>
-                                        </svg>
-                                        Cпочатку давніші
-                                    </button>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Для питань чи пропозицій:</div>
                                 </div>
-                            </div>
-                            <div class="mask-balance">
-                                <div class="mask-balance__wgt">
-                                    <div class="mask-balance__wgt-photo">
-                                        <img class="mask-balance__wgt-img" src="img/user-image-1.png" alt="User">
-                                    </div>
-                                    <div class="mask-balance__wgt-desc">
-                                        <div class="mask-balance__wgt-head">
-                                            <div class="mask-balance__wgt-name">Марченко Аліна Віталівна</div>
-                                            <div class="mask-balance__wgt-date">11 Apr 2020, 18:23</div>
-                                        </div>
-                                        <div class="mask-balance__wgt-body">
-                                            <div class="mask-balance__wgt-type">
-                                                Тип діагностики:
-                                                <span class="mask-balance__wgt-type--desc">Рентген знімок</span>
+                                <div class="mask-open__body">
+                                    <div class="appeal-chat">
+                                        <div class="appeal-chat__wgt">
+                                            <div class="appeal-chat__wgt-photo mr-3">
+                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
                                             </div>
-                                            <div class="mask-balance__wgt-price">400 UAH</div>
+                                            <div class="appeal-chat__wgt-content">
+                                                <div class="appeal-chat__wgt-head">
+                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
+                                                </div>
+                                                <div class="appeal-chat__wgt-body">
+                                                    <div class="appeal-chat__wgt-message">Хочу к вам на приём чтобы назначить лечение, можно?</div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mask-balance__wgt-foot">
-                                            <div class="mask-balance__wgt-commission">
-                                                Комісія сервісу: 
-                                                <span class="mask-balance__wgt-commission--price">400грн</span>
+                                        <div class="appeal-chat__wgt">
+                                            <div class="appeal-chat__wgt-content">
+                                                <div class="appeal-chat__wgt-head">
+                                                    <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
+                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                </div>
+                                                <div class="appeal-chat__wgt-body justify-content-end">
+                                                    <div class="appeal-chat__wgt-message">Хочу к вам на приём чтобы назначить лечение, можно?</div>
+                                                </div>
+                                            </div>
+                                            <div class="appeal-chat__wgt-photo ml-3">
+                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mask-balance__wgt">
-                                    <div class="mask-balance__wgt-photo">
-                                        <img class="mask-balance__wgt-img" src="img/user-image-1.png" alt="User">
-                                    </div>
-                                    <div class="mask-balance__wgt-desc">
-                                        <div class="mask-balance__wgt-head">
-                                            <div class="mask-balance__wgt-name">Марченко Аліна Віталівна</div>
-                                            <div class="mask-balance__wgt-date">11 Apr 2020, 18:23</div>
-                                        </div>
-                                        <div class="mask-balance__wgt-body">
-                                            <div class="mask-balance__wgt-type">
-                                                Тип діагностики:
-                                                <span class="mask-balance__wgt-type--desc">Рентген знімок</span>
-                                            </div>
-                                            <div class="mask-balance__wgt-price">400 UAH</div>
-                                        </div>
-                                        <div class="mask-balance__wgt-foot">
-                                            <div class="mask-balance__wgt-commission">
-                                                Комісія сервісу: 
-                                                <span class="mask-balance__wgt-commission--price">400грн</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="mask-open__body">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Залиште коментар"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -276,25 +298,6 @@
             </div>
         </main>
     </div>
-    <div class="modal fade" id="balanceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-    `</div>
 
     <footer class="footer">
     <div class="footer_theme_grey">
