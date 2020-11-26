@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Chart.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <section class="section section-archive-questions">
+                <div class="container">
+                    <div class="general-head pt-4">
+                        <h2 class="general-head__title">Часті запитання</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                   <div class="questions-filters">
+                       <button class="questions-filters__btn active">Всі</button>
+                       <button class="questions-filters__btn">Пацієнтам</button>
+                       <button class="questions-filters__btn">Медцентрам</button>
+                   </div>
+                   <div class="questions-group">
+                       <div class="row">
+                           <div class="col-lg-5">
+                               <div class="questions-group__headline">Як працює сервіс?</div>
+                           </div>
+                           <div class="col-lg-7">
+                               <div class="questions-group__links">
+                                    <a class="questions-group__link" href="single-question.html">Скільки чекати опис?</a>
+                                    <a class="questions-group__link" href="#">Як створити заявку?</a>
+                                    <a class="questions-group__link" href="#">Які файли я отримаю після описання знімку?</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="questions-group">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="questions-group__headline">Про лікарів <a class="questions-group__headline--link" href="#">Rengen.me</a></div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="questions-group__links">
+                                 <a class="questions-group__link" href="#">Як обирають лікарів?</a>
+                                 <a class="questions-group__link" href="#">Про кваліфікацію</a>
+                                 <a class="questions-group__link" href="#">Чи можу я записати на прийом до лікаря вашого сервісу?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-group">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="questions-group__headline">Про обробку персональних данних</div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="questions-group__links">
+                                 <a class="questions-group__link" href="#">Згода на обробку данних</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions-group">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="questions-group__headline">Для медичних центрів?</div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="questions-group__links">
+                                 <a class="questions-group__link" href="#">Як розпочати співпрацю?</a>
+                                 <a class="questions-group__link" href="#">Як виглядає договір?</a>
+                                 <a class="questions-group__link" href="#">Які дані потрібні?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    @@include('_footer.html')
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

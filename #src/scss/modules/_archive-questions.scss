@@ -1,0 +1,101 @@
+.questions-filters {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__btn {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #097B79;
+        background: #A2EEEC;
+        border-radius: 15px;
+        padding: 7px 20px;
+        margin-bottom: 10px;
+        margin-right: 15px;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            padding: 7px 30px;
+            margin-right: 20px;
+        }
+    }
+
+    &__btn.active {
+        background: #12D3CE;
+        color: #FFFFFF;
+    }
+
+
+}
+
+.questions-group {
+    margin-bottom: 30px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+    }
+
+    &__headline {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        color: #8D9396;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, rgba(89, 226, 226, 1),
+                rgba(134, 62, 255, 0)) 47% 50%;
+        padding-bottom: 15px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        &--link {
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 0.04em;
+            color: rgba(18, 211, 206, 1);
+            margin-left: 10px;
+
+            &:hover {
+                color: rgba(18, 211, 206, 1);
+            }
+        }
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        color: #1A2828;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        transition: all .5s;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        &:hover {
+            color: rgba(18, 211, 206, 1);
+        }
+
+        &:last-child {
+            @media (min-width: 992px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

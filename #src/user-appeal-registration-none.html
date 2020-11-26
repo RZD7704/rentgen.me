@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Chart.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <section class="section section-registration">
+                <div class="container">
+                    <div class="general-head pt-1">
+                        <h2 class="general-head__title">Peєстрація</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-xl-6 offset-md-1 offset-xl-3">
+                            <div class="general-head pt-4 pb-3">
+                                <h2 class="general-head__title">Про пацієнта</h2>
+                            </div>
+                            <form class="registration-content__form" action="#">
+                                <div class="registration-input pb-3">
+                                    <div class="registration-input__headline">ПІБ</div>
+                                    <input class="registration-input__form" type="text" placeholder="Введіть дані">
+                                </div>
+                                <div class="registration-gender pb-3">
+                                    <button class="registration-gender__btn active">чоловіча</button>
+                                    <button class="registration-gender__btn">жіноча</button>
+                                </div>
+                                <div class="registration-date pb-3">
+                                    <div class="registration-date__headline">Дата народження:</div>
+                                    <div class="registration-date__selects">
+                                        <select class="registration-date__select registration-date__select-date" name="select">
+                                            <option value="value1">01</option> 
+                                            <option value="value2">02</option>
+                                            <option value="value3">03</option>
+                                            <option value="value3">Значение 4</option>
+                                            <option value="value3">Значение 5</option>
+                                        </select>
+                                        <select class="registration-date__select registration-date__select-mounth" name="select">
+                                            <option value="value1">січень</option> 
+                                            <option value="value2">січень</option>
+                                            <option value="value3">січень</option>
+                                            <option value="value3">Значение 4</option>
+                                            <option value="value3">Значение 5</option>
+                                        </select>
+                                        <select class="registration-date__select registration-date__select-year" name="select">
+                                            <option value="value1">1900</option> 
+                                            <option value="value2">1900</option>
+                                            <option value="value3">1900</option>
+                                            <option value="value3">Значение 4</option>
+                                            <option value="value3">Значение 5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="general-head pt-3 pb-3">
+                                    <h2 class="general-head__title">Основні дані</h2>
+                                </div>
+                                <div class="registration-selects pb-3">
+                                    <select class="registration-selects__select" name="select">
+                                        <option disabled selected>Оберіть область</option>
+                                        <option value="value1">Значение 1</option> 
+                                        <option value="value2">Значение 2</option>
+                                        <option value="value3">Значение 3</option>
+                                        <option value="value3">Значение 4</option>
+                                        <option value="value3">Значение 5</option>
+                                    </select>
+                                    <select class="registration-selects__select" name="select">
+                                        <option disabled selected>Оберіть область</option>
+                                        <option value="value1">Значение 1</option> 
+                                        <option value="value2">Значение 2</option>
+                                        <option value="value3">Значение 3</option>
+                                        <option value="value3">Значение 4</option>
+                                        <option value="value3">Значение 5</option>
+                                    </select>
+                                </div>
+                                <div class="registration-input pb-3">
+                                    <div class="registration-input__headline">Попередній діагноз</div>
+                                    <input class="registration-input__form" type="text" placeholder="Вкажіть попердній діагноз">
+                                </div>
+                                <div class="registration-input pb-3">
+                                    <div class="registration-input__headline">Посилання на діагностику</div>
+                                    <input class="registration-input__form" type="text" placeholder="Вставте посилання">
+                                </div>
+                                <div class="registration-add-field pb-4">
+                                    <button class="registration-add-field__btn ml-auto d-block"  type="button">Додати текстове поле</button>
+                                </div>
+                                <div class="registration-checkbox">
+                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+                                    <label class="registration-checkbox__txt" for="happy">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
+                                </div>
+                                <button class="registration-btn mx-auto d-block mt-4" type="submit">Зберегти</button>
+                            </form>
+                        </div>
+                    </div>
+                   
+               </div>
+            </section>
+         
+        </main>
+    </div>
+
+    @@include('_footer.html')
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

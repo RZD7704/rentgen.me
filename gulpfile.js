@@ -22,6 +22,7 @@ let path = {
             "node_modules/bootstrap/dist/js/bootstrap.js",
             "node_modules/chart.js/dist/Chart.js",
             "node_modules/swiper/swiper-bundle.min.js",
+            "node_modules/inputmask/dist/jquery.inputmask.js",
             source_folder + "/js/script.js"
         ],
         img:  source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",

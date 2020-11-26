@@ -110,5 +110,5 @@ window.onload = function() {
             prevEl: '.chief-profiles__btn-prev',
         },
     });
-
+    
 }  
