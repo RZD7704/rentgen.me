@@ -253,30 +253,35 @@
             </div>
         </main>
     </div>
-    <div class="modal fade" id="balanceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div class="modal fade general-modal balance-modal" id="balanceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog general-modal__dialog">
+            <div class="modal-content general-modal__content">
+                <div class="modal-header general-modal__header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body general-modal__body">
+                    <div class="balance-modal__head pb-5">
+                        <div class="balance-modal__head-txt">Рекомендована сума оплати</div>
+                        <div class="balance-modal__head-price">2200 UAH</div>
+                    </div>   
+                    <form class="modal-form" action="#">
+                        <div class="modal-form__input pb-4">
+                            <div class="modal-form__input-headline">Бажана сума сплати</div>
+                            <input class="modal-form__input-field" type="text" placeholder="Введіть пошту">
+                        </div>
+                        <button class="modal-form__btn" type="submit">Сплатити</button>
+                    </form>  
+                </div>
+                <div class="general-modal__footer">
+                    <div class="general-modal__footer-span">Оплата через платіжну систему LiqPay</div>
+                </div>
             </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
     `</div>
 
     @@include('_footer.html')
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/script.js"></script>
+    @@include('_scripts.html')
 </body>
 </html>

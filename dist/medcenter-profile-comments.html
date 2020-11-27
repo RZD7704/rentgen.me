@@ -32,12 +32,22 @@
                     </a>
                 </div>
                 <div class="header-nav__log">
-                    <a class="header-nav__log-btn" href="doctor-appeal-open-active.html">Увійти</a>
+                    <!-- <a class="header-nav__log-btn" href="medcenter-appeal-open.html">Увійти</a> -->
+
+                    <div class="dropdown header-dropdown">
+                        <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a>
+
+                        <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                            <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                            <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
         <main class="main">
             <div class="section section-user-profile profile-mask">
                 <div class="container">
@@ -244,7 +254,42 @@
         </main>
     </div>
 
-    <footer class="footer">
+    <div class="modal fade general-modal" id="logModal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Вхід</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Логін</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть логін">
+                    </div>
+                    <div class="modal-form__input pb-4">
+                        <div class="modal-form__input-headline">Пароль</div>
+                        <input class="modal-form__input-field" type="password" placeholder="Введіть пароль">
+                    </div>
+                    <button class="modal-form__btn" type="submit">Увійти</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    Немає аккаунту в Rengen.me?
+                    <a class="general-modal__footer-wgt--link" href="registration.html">Зареєструватися</a>
+                </div>
+                <div class="general-modal__footer-wgt pb-4">
+                    Забули пароль?
+                    <button type="button" class="general-modal__footer-wgt--link">Відновити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
     <div class="footer_theme_grey">
         <div class="container">
             <div class="footer__wrapper">
@@ -282,8 +327,10 @@
     </div>
 </footer>
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/Chart.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>

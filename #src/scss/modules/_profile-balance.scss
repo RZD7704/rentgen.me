@@ -114,3 +114,35 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.balance-modal {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__head-txt {
+        font-family: $Playfair;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        color: #1A2828;
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &__head-price {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        color: #12D3CE;
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+
+}

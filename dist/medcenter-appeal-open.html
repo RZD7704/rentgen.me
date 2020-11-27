@@ -14,7 +14,40 @@
    
 <body>
     <div class="content">
-        @@include('_header.html')
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav__phone">
+                    <a class="header-nav__phone-link" href="tel:+380505676767">
+                        <svg class="header-nav__phone-link--icon">
+                            <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                        </svg>
+                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                    </a>
+                </div>
+                <div class="header-nav__log">
+                    <!-- <a class="header-nav__log-btn" href="medcenter-appeal-open.html">Увійти</a> -->
+
+                    <div class="dropdown header-dropdown">
+                        <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a>
+
+                        <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                            <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                            <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
         <main class="main">
             <div class="section section-user-profile profile-mask">
                 <div class="container">
@@ -33,17 +66,17 @@
                         <div class="col-12 col-lg-4">
                             <div class="profile-mask__mobile-head-wrapper">
                                 <div class="profile-mask__photo">
-                                    <img class="profile-mask__photo-img" src="img/user-image-1.png" alt="User Photo">
+                                    <img class="profile-mask__photo-img" src="img/medcenter-image-1.png" alt="User Photo">
                                 </div>
                                 <div class="profile-mask__head d-lg-none">
                                     <div class="profile-mask__head-item">
-                                        <h3 class="profile-mask__head-name pb-0">Марченко Аліна Віталівна</h3>
+                                        <h3 class="profile-mask__head-name pb-0">Медичний центр “Мій лікар”</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="profile-mask__nav d-none d-lg-flex">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -52,12 +85,12 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-open-item">
-                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                    <a class="profile-mask__nav-open-link active" href="medcenter-appeal-open.html">
                                         Відкрите звернення
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#balance-icon"></use>
                                         </svg>
@@ -66,7 +99,7 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
@@ -75,11 +108,11 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-tarifs.html">
                                         <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                            <use xlink:href="img/icons/icons.svg#tarifs-icon"></use>
                                         </svg>
-                                        Статистика
+                                        Тарифи
                                         <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
@@ -88,7 +121,7 @@
                         <div class="col-12 col-lg-8">
                             <div class="profile-mask__head d-none d-lg-flex">
                                 <div class="profile-mask__head-item">
-                                    <h3 class="profile-mask__head-name">Марченко Аліна Віталівна</h3>
+                                    <h3 class="profile-mask__head-name">Медичний центр “Мій лікар”</h3>
                                 </div>
                             </div>
                             <div class="profile-warning">
@@ -104,13 +137,14 @@
                                 </div>
                             </div>
                             <div class="profile-mask__list">
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Статус звернення:</div>
-                                    <div class="profile-mask__list-desc">Створено</div>
-                                </div>
+                             
                                 <div class="profile-mask__list-wgt">
                                     <div class="profile-mask__list-headline">Перередній діагноз:</div>
                                     <div class="profile-mask__list-desc">Відсутній</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Дата народження:</div>
+                                    <div class="profile-mask__list-desc">30.10.1993</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
                                     <div class="profile-mask__list-headline">Тип діагностики:</div>
@@ -127,7 +161,7 @@
                             </div>
                             <div class="profile-mask__nav d-lg-none pt-2">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -136,12 +170,12 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-open-item">   
-                                    <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
+                                    <a class="profile-mask__nav-open-link active" href="medcenter-appeal-open.html">
                                         Відкрите звернення
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-balance.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#balance-icon"></use>
                                         </svg>
@@ -150,7 +184,7 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
@@ -159,74 +193,16 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
+                                    <a class="profile-mask__nav-link" href="medcenter-profile-tarifs.html">
                                         <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                            <use xlink:href="img/icons/icons.svg#medcenter-icon"></use>
                                         </svg>
-                                        Статистика
+                                        Тарифи
                                         <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
                             </div>
                             <div class="mask-open">
-                                <div class="mask-open__head">
-                                    <div class="mask-open__head-title">Результати обстеження</div>
-                                    <a class="mask-open__head-btn" href="#">
-                                        <svg class="mask-open__head-btn--icon">
-                                            <use xlink:href="img/icons/icons.svg#download-arr-icon"></use>
-                                        </svg>
-                                        Завантажити
-                                    </a>
-                                </div>
-                                <div class="mask-open__body">
-                                    <div class="appeal-results">
-                                        <div class="appeal-results__wgt">
-                                            <a class="appeal-results__wgt-link" href="#">
-                                                <svg class="appeal-results__wgt-link--icon">
-                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
-                                                </svg>
-                                                Результати
-                                            </a>
-                                            <div class="appeal-results__delete">
-                                                <svg class="appeal-results__delete--icon">
-                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="appeal-results__wgt">
-                                            <a class="appeal-results__wgt-link" href="#">
-                                                <svg class="appeal-results__wgt-link--icon">
-                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
-                                                </svg>
-                                                Результати
-                                            </a>
-                                            <div class="appeal-results__delete">
-                                                <svg class="appeal-results__delete--icon">
-                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="appeal-results__wgt">
-                                            <input type="file" name="file" id="file" class="inputfile" />
-                                            <label class="appeal-results__wgt-file" for="file">
-                                                <svg class="appeal-results__wgt-file--icon">
-                                                    <use xlink:href="img/icons/icons.svg#import-files-icon"></use>
-                                                </svg>
-                                                Прикріпити файл
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="mask-open__head">
-                                    <div class="mask-open__head-title">Діагноз:</div>
-                                </div>
-                                <div class="mask-open__body section-border pb-4">
-                                    <form class="appeal-form" action="#">
-                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Введіть діагноз"></textarea>
-                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
-                                    </form>
-                                </div>
                                 <div class="mask-open__head">
                                     <div class="mask-open__head-title">Для питань чи пропозицій:</div>
                                 </div>
@@ -243,9 +219,83 @@
             </div>
         </main>
     </div>
+    
+    <div class="modal fade general-modal" id="logModal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Вхід</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Логін</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть логін">
+                    </div>
+                    <div class="modal-form__input pb-4">
+                        <div class="modal-form__input-headline">Пароль</div>
+                        <input class="modal-form__input-field" type="password" placeholder="Введіть пароль">
+                    </div>
+                    <button class="modal-form__btn" type="submit">Увійти</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    Немає аккаунту в Rengen.me?
+                    <a class="general-modal__footer-wgt--link" href="registration.html">Зареєструватися</a>
+                </div>
+                <div class="general-modal__footer-wgt pb-4">
+                    Забули пароль?
+                    <button type="button" class="general-modal__footer-wgt--link">Відновити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer_theme_grey">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wgt">
+                    <a href="index.html">
+                        <img class="footer__wgt-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                    </a>
+                    <div class="footer__wgt-txt pb-1">©TM 2020. All right reserved.</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Контакти</div>
+                    <a class="footer__wgt-link" href="tel:+380502770153">+38 (050) 277 01 53</a>
+                    <a class="footer__wgt-link" href="#">Телеграм</a>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Локація</div>
+                    <div class="footer__wgt-txt">Полтава, Гоголя, 12</div>
+                    <div class="footer__wgt-txt">офіс 302</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Соціальні мережі</div>
+                    <a class="footer__wgt-link" href="#">Інстаграм</a>
+                    <a class="footer__wgt-link" href="#">Фейсбук</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    @@include('_footer.html')
-    @@include('_scripts.html')
-
+    <div class="footer_theme_white">
+        <div class="container">
+            <div class="footer-question">
+                <a class="footer-question__link" href="archive-questions.html">Часті запитання</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

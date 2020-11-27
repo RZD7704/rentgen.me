@@ -74,3 +74,61 @@
 .section-border {
     border-bottom: 1px solid rgba(151, 151, 151, 0.4);
 }
+
+.general-modal {
+    &__dialog {}
+
+    &__content {
+        border-top: 8px solid #12D3CE;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        border-radius: 0;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.01em;
+        color: #1A2828;
+        text-align: center;
+    }
+
+    &__header {
+        border: none;
+        padding: 5px 10px;
+    }
+
+    &__body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__footer {
+        border: none;
+        padding: 35px 0;
+        text-align: center;
+    }
+
+    &__footer-span {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #1A2828;
+    }
+
+    &__footer-wgt {
+        &--link {
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 0.01em;
+            color: rgba(18, 211, 206, 1);
+            margin-left: 5px;
+
+            &:hover {
+                color: rgba(18, 211, 206, 1);
+            }
+        }
+    }
+
+}

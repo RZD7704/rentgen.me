@@ -16,7 +16,16 @@
                     </a>
                 </div>
                 <div class="header-nav__log">
-                    <a class="header-nav__log-btn" href="doctor-appeal-open-active.html">Увійти</a>
+                    <!-- <a class="header-nav__log-btn" href="medcenter-appeal-open.html">Увійти</a> -->
+
+                    <div class="dropdown header-dropdown">
+                        <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a>
+
+                        <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                            <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                            <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>

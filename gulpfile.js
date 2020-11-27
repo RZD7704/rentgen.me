@@ -19,7 +19,7 @@ let path = {
         ],
         js: [
             "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/bootstrap/dist/js/bootstrap.js",
+            "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
             "node_modules/chart.js/dist/Chart.js",
             "node_modules/swiper/swiper-bundle.min.js",
             "node_modules/inputmask/dist/jquery.inputmask.js",

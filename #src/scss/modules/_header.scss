@@ -79,3 +79,23 @@
         }
     }
 }
+
+.header-dropdown {
+    &__menu {
+        transform: translate3d(-105px, 28px, 0px) !important;
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        padding: 20px;
+        transition: all .3s;
+
+        &:hover {
+            background: #12D3CE;
+            color: #fff;
+        }
+    }
+}
