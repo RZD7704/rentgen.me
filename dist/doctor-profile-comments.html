@@ -267,7 +267,7 @@
         </main>
     </div>
 
-    <div class="modal fade general-modal" id="logModal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+    <div class="modal fade general-modal" id="logModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog general-modal__dialog">
         <div class="modal-content general-modal__content">
             <div class="modal-header general-modal__header">
@@ -296,7 +296,92 @@
                 </div>
                 <div class="general-modal__footer-wgt pb-4">
                     Забули пароль?
-                    <button type="button" class="general-modal__footer-wgt--link">Відновити</button>
+                    <button type="button" class="general-modal__footer-wgt--link" data-toggle="modal" data-target="#recoveryModalNum">Відновити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade general-modal" id="recoveryModalNum" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Відновлення доступу</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Логін або номер телефону</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="modal-form__txt pb-5">На ваші контактні дані буде відправлено код для відновлення доступу.</div>
+                    <button class="modal-form__btn" type="button" data-toggle="modal" data-target="#recoveryModalPas">Надіслати</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    <a class="general-modal__footer-wgt--link" href="registration.html">Повернутися назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade general-modal" id="recoveryModalPas" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Відновлення доступу</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Логін або номер телефону</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="modal-form__txt pb-5">На ваші контактні дані буде відправлено код для відновлення доступу.</div>
+                    <button class="modal-form__btn" type="button" data-toggle="modal" data-target="#recoveryModalNewPas">Надіслати</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    Не прийшов код? 
+                    <button class="general-modal__footer-wgt--link" type="button">Спробувати ще раз</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade general-modal" id="recoveryModalNewPas" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Відновлення доступу</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Придумайте новий пароль</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть код">
+                    </div>
+                    <div class="modal-form__input pb-4">
+                        <div class="modal-form__input-headline">Повторіть пароль</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть код">
+                    </div>
+                    <button class="modal-form__btn" type="button" data-toggle="modal" data-target="#recoveryModalPas">Надіслати</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    Мінімум 6 символів на латиниці
                 </div>
             </div>
         </div>
@@ -334,7 +419,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="archive-questions.html">Часті запитання</a>
+                <a class="footer-question__link" href="404.html">Часті запитання</a>
             </div>
         </div>
     </div>

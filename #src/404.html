@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Chart.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <section class="section section-not-found">
+                <div class="container">
+                    <div class="general-head pt-4">
+                        <h2 class="general-head__title">Упс, здається ця сторінка відсутня</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                    <div class="not-found">
+                        <div class="not-found__head">
+                            Ви можете повернутися
+                            <a class="not-found__head--link" href="#">на попередю сторінку</a>
+                        </div>
+                        <div class="not-found__num">
+                            404
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    @@include('_footer.html')
+    @@include('_scripts.html')
+
+</body>
+</html>

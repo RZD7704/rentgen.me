@@ -1,0 +1,41 @@
+.not-found {
+    &__head {
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        color: #8D9396;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+        }
+
+        &--link {
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 0.04em;
+            color: rgba(18, 211, 206, 1);
+
+            &:hover {
+                color: rgba(18, 211, 206, 1);
+            }
+
+            @media (min-width: 992px) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    &__num {
+        text-align: center;
+        font-weight: 600;
+        font-size: 90px;
+        letter-spacing: 0.04em;
+        color: rgba(18, 211, 206, 1);
+        padding: 50px 0;
+
+        @media (min-width: 992px) {
+            font-size: 150px;
+            padding: 80px 0;
+        }
+    }
+}
