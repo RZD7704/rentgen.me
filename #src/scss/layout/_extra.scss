@@ -9,6 +9,7 @@
 .general-head {
     padding-bottom: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     @media (min-width: 992px) {
@@ -21,9 +22,11 @@
         font-size: 16px;
         letter-spacing: 0.04em;
         color: #090909;
+        padding-bottom: 10px;
 
         @media (min-width: 992px) {
             font-size: 22px;
+            padding-bottom: 0;
         }
     }
 
