@@ -111,4 +111,27 @@ window.onload = function() {
         },
     });
     
-}  
+};
+
+jQuery( document ).ready(function($) {
+    let recoveryModalBtn = $('.modal-js');
+    $(recoveryModalBtn).click(function(e) {
+        e.preventDefault();
+        $('#logModal').modal('hide');
+        $('#logModal').on('hidden.bs.modal', function(e) {
+            $('#recoveryModal').modal('show');
+        });
+    });
+
+    let i = 1;
+
+    $('.recovery-send-btn').click( (e)=> {
+        i += 1;
+        e.preventDefault();
+        $('[data-stage="' + (i - 1) + '"]').fadeOut('slow', function() {
+            $('[data-stage="' + i + '"]').fadeIn('slow');
+        });
+    });
+
+});
+
