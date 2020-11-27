@@ -14,45 +14,53 @@
    
 <body>
     <div class="content">
-        @@include('_header.html')
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav__phone">
+                    <a class="header-nav__phone-link" href="tel:+380505676767">
+                        <svg class="header-nav__phone-link--icon">
+                            <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                        </svg>
+                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                    </a>
+                </div>
+                <div class="header-nav__log">
+                    <a class="header-nav__log-btn" href="doctor-appeal-open.html">Увійти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
         <main class="main">
             <div class="section section-user-profile profile-mask">
                 <div class="container">
                     <div class="general-head pt-1">
-                        <h2 class="general-head__title">Мій кабінет</h2>
-                        <a class="general-head__btn" href="#">
-                            <svg class="general-head__btn-icon">
-                                <use xlink:href="img/icons/icons.svg#editing-icon"></use>
-                            </svg>
-                            Редагувати
-                        </a>
+                        <h2 class="general-head__title">Відкрите звернення</h2>
+                        <div class="general-head__btns d-flex">
+                            <a class="general-head__btn" href="#">
+                                <svg class="general-head__btn-icon">
+                                    <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                                </svg>
+                                Повернутися
+                            </a>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-4">
                             <div class="profile-mask__mobile-head-wrapper">
                                 <div class="profile-mask__photo">
-                                    <img class="profile-mask__photo-img" src="img/doctor-image-1.png" alt="User Photo">
+                                    <img class="profile-mask__photo-img" src="img/user-image-1.png" alt="User Photo">
                                 </div>
                                 <div class="profile-mask__head d-lg-none">
                                     <div class="profile-mask__head-item">
-                                        <h3 class="profile-mask__head-name pb-0">Нестуля Катерина Ігорівна</h3>
-                                        <div class="profile-mask__head-rate">
-                                            <svg class="profile-mask__head-rate--icon">
-                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                            </svg>
-                                            <svg class="profile-mask__head-rate--icon">
-                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                            </svg>
-                                            <svg class="profile-mask__head-rate--icon">
-                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                            </svg>
-                                            <svg class="profile-mask__head-rate--icon">
-                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                            </svg>
-                                            <svg class="profile-mask__head-rate--icon">
-                                                <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                            </svg>
-                                        </div>
+                                        <h3 class="profile-mask__head-name pb-0">Марченко Аліна Віталівна</h3>
                                     </div>
                                 </div>
                             </div>
@@ -103,50 +111,41 @@
                         <div class="col-12 col-lg-8">
                             <div class="profile-mask__head d-none d-lg-flex">
                                 <div class="profile-mask__head-item">
-                                    <h3 class="profile-mask__head-name">Лавренко Микола Генадійович</h3>
-                                    <div class="profile-mask__head-rate">
-                                        <svg class="profile-mask__head-rate--icon">
-                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                        </svg>
-                                        <svg class="profile-mask__head-rate--icon">
-                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                        </svg>
-                                        <svg class="profile-mask__head-rate--icon">
-                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                        </svg>
-                                        <svg class="profile-mask__head-rate--icon">
-                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                        </svg>
-                                        <svg class="profile-mask__head-rate--icon">
-                                            <use xlink:href="img/icons/icons.svg#star-icon"></use>
-                                        </svg>
-                                    </div>
+                                    <h3 class="profile-mask__head-name">Марченко Аліна Віталівна</h3>
+                                </div>
+                            </div>
+                            <div class="profile-warning">
+                                <div class="warning-status">
+                                    <svg class="warning-status__icon">
+                                        <use xlink:href="img/icons/icons.svg#warning-icon"></use>
+                                    </svg>
+                                    В порядку черги
+                                </div>
+                                <div class="warning-message">
+                                    <div class="warning-message__headline">Зверніть увагу! </div>
+                                    <div class="warning-message__description">Щоб розпочати роботу з сервісом <a class="warning-message__description--link" href="#">rentgen.me</a> потрібно <a class="warning-message__description--link" href="#">грати на бубні</a> або зателефонувати за номером <a class="warning-message__description--link" href="tel:+380663107870">+38 066 310 78 70</a> для укладення договору.</div>
                                 </div>
                             </div>
                             <div class="profile-mask__list">
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Стаж роботи:</div>
-                                    <div class="profile-mask__list-desc">9 років</div>
+                                    <div class="profile-mask__list-headline">Статус звернення:</div>
+                                    <div class="profile-mask__list-desc">Створено</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Місто:</div>
-                                    <div class="profile-mask__list-desc">Полтава</div>
+                                    <div class="profile-mask__list-headline">Перередній діагноз:</div>
+                                    <div class="profile-mask__list-desc">Відсутній</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Місце роботи:</div>
-                                    <div class="profile-mask__list-desc">УМСА</div>
+                                    <div class="profile-mask__list-headline">Тип діагностики:</div>
+                                    <div class="profile-mask__list-desc">рентген</div>
                                 </div>
                                 <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Спеціалізація:</div>
-                                    <div class="profile-mask__list-desc">лікар радіолог, рентгенолог ІІ категорії</div>
+                                    <div class="profile-mask__list-headline">Стать:</div>
+                                    <div class="profile-mask__list-desc">жіноча</div>
                                 </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Діагностики:</div>
-                                    <div class="profile-mask__list-desc">КТ, МРТ</div>
-                                </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Про лікаря:</div>
-                                    <div class="profile-mask__list-desc">Опис відсутній</div>
+                                <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
+                                    <div class="profile-mask__list-headline max-width pb-2">Посилання</div>
+                                    <div class="profile-mask__list-desc"> <a class="profile-mask__list-desc--link" href="#">https://www.behance.net...</a></div>
                                 </div>
                             </div>
                             <div class="profile-mask__nav d-lg-none pt-2">
@@ -192,155 +191,73 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="profile-mask__title">Мої звернення</div>
-                            <div class="profile-mask__filter">
-                                <div class="profile-mask__subtitle">Оберіть статус:</div>
-                                <button class="profile-mask__filter-btn active" type="button">Всі</button>
-                                <button class="profile-mask__filter-btn" type="button">Опрацьовані</button>
-                                <button class="profile-mask__filter-btn" type="button">Неопрацьовані</button>
-                                <button class="profile-mask__filter-btn" type="button">Термінові</button>
-                            </div>
-                            <div class="profile-mask__filter pb-4">
-                                <div class="profile-mask__subtitle">Оберіть відправника:</div>
-                                <button class="profile-mask__filter-btn" type="button">Медичний центр</button>
-                                <button class="profile-mask__filter-btn" type="button">Пацієнт</button>
-                            </div>
-                            <div class="mask-search">
-                                <div class="mask-search__field">
-                                    <form class="mask-search__field-form" action="#">
-                                        <button class="mask-search__field-btn" type="submit">
-                                            <svg class="mask-search__field-btn--icon">
-                                                <use xlink:href="img/icons/icons.svg#search-input-btn-icon"></use>
-                                            </svg>
-                                        </button>
-                                        <input class="mask-search__field-input" type="text" placeholder="шукати пацієнта">
+                            <div class="mask-open">
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Результати обстеження</div>
+                                    <a class="mask-open__head-btn" href="#">
+                                        <svg class="mask-open__head-btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#download-arr-icon"></use>
+                                        </svg>
+                                        Завантажити
+                                    </a>
+                                </div>
+                                <div class="mask-open__body">
+                                    <div class="appeal-results">
+                                        <div class="appeal-results__wgt">
+                                            <a class="appeal-results__wgt-link" href="#">
+                                                <svg class="appeal-results__wgt-link--icon">
+                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
+                                                </svg>
+                                                Результати
+                                            </a>
+                                            <div class="appeal-results__delete">
+                                                <svg class="appeal-results__delete--icon">
+                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="appeal-results__wgt">
+                                            <a class="appeal-results__wgt-link" href="#">
+                                                <svg class="appeal-results__wgt-link--icon">
+                                                    <use xlink:href="img/icons/icons.svg#folder-files-icon"></use>
+                                                </svg>
+                                                Результати
+                                            </a>
+                                            <div class="appeal-results__delete">
+                                                <svg class="appeal-results__delete--icon">
+                                                    <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="appeal-results__wgt">
+                                            <input type="file" name="file" id="file" class="inputfile" />
+                                            <label class="appeal-results__wgt-file" for="file">
+                                                <svg class="appeal-results__wgt-file--icon">
+                                                    <use xlink:href="img/icons/icons.svg#import-files-icon"></use>
+                                                </svg>
+                                                Прикріпити файл
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Діагноз:</div>
+                                </div>
+                                <div class="mask-open__body section-border pb-4">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Введіть діагноз"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
                                     </form>
                                 </div>
-                                <div class="mask-search__filter">
-                                    <button class="mask-search__filter-btn" type="button">
-                                        <svg class="mask-search__filter-btn--icon">
-                                            <use xlink:href="img/icons/icons.svg#search-sort-btn-icon"></use>
-                                        </svg>
-                                        Cпочатку давніші
-                                    </button>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Для питань чи пропозицій:</div>
                                 </div>
-                            </div>
-                            <div class="mask-appeal">
-                                <div class="mask-appeal__wgt mt-3">
-                                    <a class="mask-appeal__wgt-link" href="doctor-appeal-open.html">
-                                        <div class="mask-appeal__wgt-content">
-                                            <div class="mask-appeal__wgt-photo">
-                                                <img class="mask-appeal__wgt-photo--img" src="img/user-image-1.png" alt="Doctor">
-                                            </div>
-                                            <div class="mask-appeal__wgt-desc">
-                                                <div class="mask-appeal__wgt-head">
-                                                    <div class="mask-appeal__wgt-head--name">Левченко Микола Генадійович</div>
-                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
-                                                </div>
-                                                <div class="mask-appeal-list">
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
-                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
-                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
-                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="mask-appeal__mark">
-                                        <svg class="mask-appeal__mark--icon">
-                                            <use xlink:href="img/icons/icons.svg#mark-icon-green"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="mask-appeal__wgt mt-3">
-                                    <a class="mask-appeal__wgt-link" href="#">
-                                        <div class="mask-appeal__wgt-content">
-                                            <div class="mask-appeal__wgt-photo">
-                                                <img class="mask-appeal__wgt-photo--img" src="img/medcenter-image-1.png" alt="Doctor">
-                                            </div>
-                                            <div class="mask-appeal__wgt-desc">
-                                                <div class="mask-appeal__wgt-head">
-                                                    <div class="mask-appeal__wgt-head--name">Марченко Аліна Віталівна</div>
-                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
-                                                </div>
-                                                <div class="mask-appeal-list">
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
-                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
-                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
-                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="mask-appeal__mark">
-                                        <svg class="mask-appeal__mark--icon">
-                                            <use xlink:href="img/icons/icons.svg#mark-icon-purp"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="mask-appeal__wgt mt-3">
-                                    <a class="mask-appeal__wgt-link" href="#">
-                                        <div class="mask-appeal__wgt-content">
-                                            <div class="mask-appeal__wgt-photo">
-                                                <img class="mask-appeal__wgt-photo--img" src="img/doctor-image-3.png" alt="Doctor">
-                                            </div>
-                                            <div class="mask-appeal__wgt-desc">
-                                                <div class="mask-appeal__wgt-head">
-                                                    <div class="mask-appeal__wgt-head--name">Клініка “Мій Лікар”</div>
-                                                    <div class="mask-appeal__wgt-head--date d-none d-lg-block">11 Apr 2020, 18:23</div>
-                                                </div>
-                                                <div class="mask-appeal-list">
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Тип діагностики:</div>
-                                                        <div class="mask-appeal-list__item-desc">Рентген знімок</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Діагноз:</div>
-                                                        <div class="mask-appeal-list__item-desc">Пневмонія</div>
-                                                    </div>
-                                                    <div class="mask-appeal-list__item">
-                                                        <div class="mask-appeal-list__item-headline">Статус:</div>
-                                                        <div class="mask-appeal-list__item-desc">Опрацьовано</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="mask-appeal__mark">
-                                        <svg class="mask-appeal__mark--icon">
-                                            <use xlink:href="img/icons/icons.svg#mark-icon-grey"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="mask-appeal__points mb-3">
-                                    <div class="mask-appeal__points-item">
-                                        <div class="mask-appeal__points-item--point mask-appeal__points-item--point_theme_green"></div>
-                                        <div class="mask-appeal__points-item--txt">Опрацьовані</div>
-                                    </div>
-                                    <div class="mask-appeal__points-item">
-                                        <div class="mask-appeal__points-item--point  mask-appeal__points-item--point_theme_grey"></div>
-                                        <div class="mask-appeal__points-item--txt">Опрацьовані</div>
-                                    </div>
-                                </div>
-                                <div class="mask-appeal__nav">
-                                    <button class="mask-appeal__nav-btn" type="button">Попередні звернення</button>
-                                    <button class="mask-appeal__nav-btn active" type="button">Наступні звернення</button>
+                                <div class="mask-open__body">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Залиште коментар"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +267,43 @@
         </main>
     </div>
 
-    @@include('_footer.html')
+    <footer class="footer">
+    <div class="footer_theme_grey">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wgt">
+                    <a href="index.html">
+                        <img class="footer__wgt-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                    </a>
+                    <div class="footer__wgt-txt pb-1">©TM 2020. All right reserved.</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Контакти</div>
+                    <a class="footer__wgt-link" href="tel:+380502770153">+38 (050) 277 01 53</a>
+                    <a class="footer__wgt-link" href="#">Телеграм</a>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Локація</div>
+                    <div class="footer__wgt-txt">Полтава, Гоголя, 12</div>
+                    <div class="footer__wgt-txt">офіс 302</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Соціальні мережі</div>
+                    <a class="footer__wgt-link" href="#">Інстаграм</a>
+                    <a class="footer__wgt-link" href="#">Фейсбук</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_theme_white">
+        <div class="container">
+            <div class="footer-question">
+                <a class="footer-question__link" href="#">Часті запитання</a>
+            </div>
+        </div>
+    </div>
+</footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/Chart.js"></script>

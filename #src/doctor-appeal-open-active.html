@@ -32,7 +32,7 @@
                     </a>
                 </div>
                 <div class="header-nav__log">
-                    <a class="header-nav__log-btn" href="doctor-appeal-open-active.html">Увійти</a>
+                    <a class="header-nav__log-btn" href="doctor-appeal-open.html">Увійти</a>
                 </div>
             </div>
         </div>
@@ -42,13 +42,15 @@
             <div class="section section-user-profile profile-mask">
                 <div class="container">
                     <div class="general-head pt-1">
-                        <h2 class="general-head__title">Звернення №256</h2>
-                        <a class="general-head__btn" href="#">
-                            <svg class="general-head__btn-icon">
-                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
-                            </svg>
-                            Повернутися
-                        </a>
+                        <h2 class="general-head__title">Відкрите звернення</h2>
+                        <div class="general-head__btns d-flex">
+                            <a class="general-head__btn" href="#">
+                                <svg class="general-head__btn-icon">
+                                    <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                                </svg>
+                                Повернутися
+                            </a>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-4">
@@ -58,13 +60,13 @@
                                 </div>
                                 <div class="profile-mask__head d-lg-none">
                                     <div class="profile-mask__head-item">
-                                        <h3 class="profile-mask__head-name pb-3">Лавренко Микола Генадійович</h3>
+                                        <h3 class="profile-mask__head-name pb-0">Марченко Аліна Віталівна</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="profile-mask__nav d-none d-lg-flex">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -78,7 +80,16 @@
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
+                                        </svg>
+                                        Мій баланс
+                                        <span class="profile-mask__nav-link--num">800$</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
@@ -86,25 +97,34 @@
                                         <span class="profile-mask__nav-link--num">(1)</span>
                                     </a>
                                 </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                        </svg>
+                                        Статистика
+                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-8">
                             <div class="profile-mask__head d-none d-lg-flex">
                                 <div class="profile-mask__head-item">
-                                    <h3 class="profile-mask__head-name">Лавренко Микола Генадійович</h3>
+                                    <h3 class="profile-mask__head-name">Марченко Аліна Віталівна</h3>
                                 </div>
                             </div>
                             <div class="profile-warning">
                                 <div class="warning-status">
                                     <svg class="warning-status__icon">
-                                        <use xlink:href="img/icons/icons.svg#warning-green-icon"></use>
+                                        <use xlink:href="img/icons/icons.svg#warning-icon"></use>
                                     </svg>
-                                    Оброблено
+                                    В порядку черги
                                 </div>
-                                <!-- <div class="warning-message">
+                                <div class="warning-message">
                                     <div class="warning-message__headline">Зверніть увагу! </div>
                                     <div class="warning-message__description">Щоб розпочати роботу з сервісом <a class="warning-message__description--link" href="#">rentgen.me</a> потрібно <a class="warning-message__description--link" href="#">грати на бубні</a> або зателефонувати за номером <a class="warning-message__description--link" href="tel:+380663107870">+38 066 310 78 70</a> для укладення договору.</div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="profile-mask__list">
                                 <div class="profile-mask__list-wgt">
@@ -115,13 +135,13 @@
                                     <div class="profile-mask__list-headline">Перередній діагноз:</div>
                                     <div class="profile-mask__list-desc">Відсутній</div>
                                 </div>
-                                <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
-                                    <div class="profile-mask__list-headline max-width pb-2">Встановлений діагноз:</div>
-                                    <div class="profile-mask__list-desc profile-mask__list-desc_theme_green">Перелом променевої кістки лівої руки зі зміщенням</div>
-                                </div>
                                 <div class="profile-mask__list-wgt">
                                     <div class="profile-mask__list-headline">Тип діагностики:</div>
                                     <div class="profile-mask__list-desc">рентген</div>
+                                </div>
+                                <div class="profile-mask__list-wgt">
+                                    <div class="profile-mask__list-headline">Стать:</div>
+                                    <div class="profile-mask__list-desc">жіноча</div>
                                 </div>
                                 <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
                                     <div class="profile-mask__list-headline max-width pb-2">Посилання</div>
@@ -130,7 +150,7 @@
                             </div>
                             <div class="profile-mask__nav d-lg-none pt-2">
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-appeal.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
                                         </svg>
@@ -138,18 +158,36 @@
                                         <span class="profile-mask__nav-link--num">(4)</span>
                                     </a>
                                 </div>
-                                <div class="profile-mask__nav-open-item">
+                                <div class="profile-mask__nav-open-item">   
                                     <a class="profile-mask__nav-open-link active" href="user-appeal-open.html">
                                         Відкрите звернення
                                     </a>
                                 </div>
                                 <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-balance.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
+                                        </svg>
+                                        Мій баланс
+                                        <span class="profile-mask__nav-link--num">800$</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-comments.html">
                                         <svg class="profile-mask__nav-link--icon">
                                             <use xlink:href="img/icons/icons.svg#message-icon"></use>
                                         </svg>
                                         Коментарі
                                         <span class="profile-mask__nav-link--num">(1)</span>
+                                    </a>
+                                </div>
+                                <div class="profile-mask__nav-item">
+                                    <a class="profile-mask__nav-link" href="doctor-profile-statistic.html">
+                                        <svg class="profile-mask__nav-link--icon">
+                                            <use xlink:href="img/icons/icons.svg#statistic-icon"></use>
+                                        </svg>
+                                        Статистика
+                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
                                     </a>
                                 </div>
                             </div>
@@ -201,10 +239,57 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="mask-open__body-desc pt-4">
-                                        <div class="mask-open__body-desc--title">Діагноз:</div>
-                                        <div class="mask-open__body-desc--txt">Перелом променевої кістки лівої руки зі зміщенням</div>
+
+                                </div>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Діагноз:</div>
+                                </div>
+                                <div class="mask-open__body section-border pb-4">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Введіть діагноз"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
+                                    </form>
+                                </div>
+                                <div class="mask-open__head">
+                                    <div class="mask-open__head-title">Для питань чи пропозицій:</div>
+                                </div>
+                                <div class="mask-open__body">
+                                    <div class="appeal-chat">
+                                        <div class="appeal-chat__wgt">
+                                            <div class="appeal-chat__wgt-photo mr-3">
+                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
+                                            </div>
+                                            <div class="appeal-chat__wgt-content">
+                                                <div class="appeal-chat__wgt-head">
+                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
+                                                </div>
+                                                <div class="appeal-chat__wgt-body">
+                                                    <div class="appeal-chat__wgt-message">Хочу к вам на приём чтобы назначить лечение, можно?</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="appeal-chat__wgt">
+                                            <div class="appeal-chat__wgt-content">
+                                                <div class="appeal-chat__wgt-head">
+                                                    <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
+                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                </div>
+                                                <div class="appeal-chat__wgt-body justify-content-end">
+                                                    <div class="appeal-chat__wgt-message">Хочу к вам на приём чтобы назначить лечение, можно?</div>
+                                                </div>
+                                            </div>
+                                            <div class="appeal-chat__wgt-photo ml-3">
+                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="mask-open__body">
+                                    <form class="appeal-form" action="#">
+                                        <textarea class="appeal-form__textarea" name="questions" cols="30" rows="10" placeholder="Залиште коментар"></textarea>
+                                        <button class="appeal-form__btn ml-auto d-block" type="submit">Відправити</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +331,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="archive-questions.html">Часті запитання</a>
+                <a class="footer-question__link" href="#">Часті запитання</a>
             </div>
         </div>
     </div>
