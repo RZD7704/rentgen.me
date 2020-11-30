@@ -20,7 +20,9 @@
             width: 25%;
         }
 
-        &--img {}
+        &--img {
+            border-radius: 15px;
+        }
     }
 
     &__content {

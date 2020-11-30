@@ -54,12 +54,12 @@
                     <div class="general-head pt-1">
                         <h2 class="general-head__title">Відкрите звернення</h2>
                         <div class="general-head__btns d-flex">
-                            <a class="general-head__btn mr-5" href="#">
+                            <button class="general-head__btn mr-5 background-transparent" type="button" data-toggle="modal" data-target="#shareModal">
                                 <svg class="general-head__btn-icon">
                                     <use xlink:href="img/icons/icons.svg#share-icon"></use>
                                 </svg>
                                 Переслати звернення
-                            </a>
+                            </button>
                             <a class="general-head__btn" href="#">
                                 <svg class="general-head__btn-icon">
                                     <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
@@ -347,7 +347,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="doctor-appeal-open.html">Часті запитання</a>
+                <a class="footer-question__link" href="user-appeal-registration.html">Часті запитання</a>
             </div>
         </div>
     </div>
@@ -456,6 +456,66 @@
         </div>
     </div>
 </div>
+    <div class="modal fade general-modal" id="shareModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog general-modal__dialog share-modal-dialog">
+            <div class="modal-content general-modal__content">
+                <div class="modal-header general-modal__header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body general-modal__body share-modal">
+                    <div class="share-modal__wgts">
+                        <div class="share-modal__wgt">
+                            <div class="share-modal__photo">
+                                <img class="share-modal__photo-img" src="img/doctor-image-2.png" alt="Photo">
+                            </div>
+                            <div class="share-modal__content">
+                                <div class="share-modal__content-name">Васько Лариса Миколаївна</div>
+                                <div class="share-modal__content-descr">лікар радіолог, рентгенолог ІІ категорії</div>
+                            </div>
+                            <button class="share-modal__btn" type="button">
+                                <svg class="share-modal__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#share-modal-icon"></use>
+                                </svg>
+                                Переслати
+                            </button>
+                        </div>
+                        <div class="share-modal__wgt">
+                            <div class="share-modal__photo">
+                                <img class="share-modal__photo-img" src="img/doctor-image-2.png" alt="Photo">
+                            </div>
+                            <div class="share-modal__content">
+                                <div class="share-modal__content-name">Васько Лариса Миколаївна</div>
+                                <div class="share-modal__content-descr">лікар радіолог, рентгенолог ІІ категорії</div>
+                            </div>
+                            <button class="share-modal__btn" type="button">
+                                <svg class="share-modal__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#share-modal-icon"></use>
+                                </svg>
+                                Переслати
+                            </button>
+                        </div>
+                        <div class="share-modal__wgt">
+                            <div class="share-modal__photo">
+                                <img class="share-modal__photo-img" src="img/doctor-image-2.png" alt="Photo">
+                            </div>
+                            <div class="share-modal__content">
+                                <div class="share-modal__content-name">Васько Лариса Миколаївна</div>
+                                <div class="share-modal__content-descr">лікар радіолог, рентгенолог ІІ категорії</div>
+                            </div>
+                            <button class="share-modal__btn" type="button">
+                                <svg class="share-modal__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#share-modal-icon"></use>
+                                </svg>
+                                Переслати
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/Chart.js"></script>

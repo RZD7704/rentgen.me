@@ -10,7 +10,7 @@
         box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
         border-radius: 0 0 12px 12px;
         border-top: 9px solid transparent;
-        border-image: linear-gradient(269.24deg, rgba(89, 226, 226, 1) 0.28%, rgba(134, 62, 255, 0) 117.3%);
+        border-image: linear-gradient(to right, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 110%);
         border-image-slice: 1;
         margin-bottom: 20px;
 
@@ -45,7 +45,7 @@
         padding: 10px 35px 15px 35px;
 
         @media (min-width: 992px) {
-            padding: 10px 0 15px 0;
+            padding: 15px 0 15px 0;
         }
 
         &--icon {
@@ -104,5 +104,12 @@
         font-size: 16px;
         letter-spacing: 0.01em;
         color: #12D3CE;
+        border-radius: 0 0 12px 12px;
+        transition: all .5s;
+
+        &:hover {
+            color: #fff;
+            background: #12D3CE;
+        }
     }
 }

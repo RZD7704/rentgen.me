@@ -21,9 +21,10 @@
         color: #363636;
         display: flex;
         align-items: center;
+        transition: all .5s;
 
         &:hover {
-            color: #363636;
+            color: #A481DE;
         }
 
         &--icon {
@@ -97,6 +98,12 @@
         border-radius: 17.5px;
         padding: 7px 30px;
         margin-top: 25px;
+        transition: all .3s;
+
+        &:hover {
+            background: #16b4af;
+            color: #fff;
+        }
     }
 }
 
@@ -218,6 +225,7 @@
 
         &--img {
             width: 100%;
+            border-radius: 10px;
         }
     }
 

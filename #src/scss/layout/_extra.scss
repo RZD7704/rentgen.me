@@ -6,6 +6,10 @@
     }
 }
 
+.background-transparent {
+    background: transparent;
+}
+
 .general-head {
     padding-bottom: 15px;
     display: flex;
@@ -37,10 +41,11 @@
         color: #8D9396;
         display: flex;
         align-items: center;
+        transition: all .5s;
 
         &:hover {
             text-decoration: none;
-            color: #8D9396;
+            color: #A481DE;
         }
 
         @media (min-width: 992px) {
@@ -68,9 +73,11 @@
     padding: 5px 15px;
     background: #12D3CE;
     border-radius: 25px;
+    transition: all .5s;
 
     &:hover {
-        color: #FFFFFF;
+        background: #16b4af;
+        color: #fff;
     }
 }
 
@@ -82,7 +89,9 @@
     &__dialog {}
 
     &__content {
-        border-top: 8px solid #12D3CE;
+        border-top: 8px solid transparent;
+        border-image: linear-gradient(to right, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 110%);
+        border-image-slice: 1;
         border-right: none;
         border-left: none;
         border-bottom: none;
@@ -128,9 +137,10 @@
             color: rgba(18, 211, 206, 1);
             margin-left: 5px;
             background: #fff;
+            transition: all .3s;
 
             &:hover {
-                color: rgba(18, 211, 206, 1);
+                color: #16b4af;
             }
         }
     }

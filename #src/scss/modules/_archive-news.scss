@@ -30,11 +30,12 @@
     &__description-txt {
         font-weight: normal;
         font-size: 12px;
+        line-height: 28px;
         letter-spacing: 0.01em;
         color: #000000;
 
         @media (min-width: 768px) {
-            font-size: 18px;
+            font-size: 16px;
             padding-bottom: 20px;
         }
     }

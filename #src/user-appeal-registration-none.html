@@ -28,7 +28,7 @@
                         </a>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 col-xl-6 offset-md-1 offset-xl-3">
+                        <div class="col-md-10 col-xl-6 mx-auto">
                             <div class="general-head pt-4 pb-3">
                                 <h2 class="general-head__title">Про пацієнта</h2>
                             </div>
@@ -38,8 +38,15 @@
                                     <input class="registration-input__form" type="text" placeholder="Введіть дані">
                                 </div>
                                 <div class="registration-gender pb-3">
-                                    <button class="registration-gender__btn active">чоловіча</button>
-                                    <button class="registration-gender__btn">жіноча</button>
+                                    <div class="registration-gender__btn">
+                                        <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-1">чоловіча</label>
+                                    </div>
+                                     
+                                    <div class="registration-gender__btn">
+                                        <input id="radio-2" type="radio" name="radio" value="2">
+                                        <label for="radio-2">жіноча</label>
+                                    </div>
                                 </div>
                                 <div class="registration-date pb-3">
                                     <div class="registration-date__headline">Дата народження:</div>

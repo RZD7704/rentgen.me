@@ -30,7 +30,9 @@
         font-weight: 600;
         font-size: 90px;
         letter-spacing: 0.04em;
-        color: rgba(18, 211, 206, 1);
+        background: linear-gradient(to right, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 69%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         padding: 50px 0;
 
         @media (min-width: 992px) {

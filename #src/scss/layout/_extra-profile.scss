@@ -42,6 +42,7 @@
 
     &__photo-img {
         width: 100%;
+        border-radius: 15px;
     }
 
     &__nav {
@@ -360,8 +361,6 @@
     }
 }
 
-.profile-warning {}
-
 .warning-status {
     display: flex;
     align-items: center;
@@ -404,10 +403,108 @@
             line-height: 28px;
             letter-spacing: 0.01em;
             color: #12D3CE;
+            transition: all .3s;
 
             &:hover {
-                color: #12D3CE;
+                color: #16b4af;
             }
+        }
+    }
+}
+
+.share-modal-dialog {
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 615px;
+    }
+}
+
+.share-modal {
+    padding: 0;
+
+    &__wgts {}
+
+    &__wgt {
+        padding: 10px 15px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__photo {
+        width: 15%;
+        margin-right: 10px;
+        line-height: 0;
+
+        // @media (min-width: 768px) {
+        //     width: 15%;
+        // }
+    }
+
+    &__photo-img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    &__content {
+        padding-right: 10px;
+    }
+
+    &__content-name {
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #363636;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__content-descr {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #363636;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #8D9396;
+
+        &--icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+
+            @media (min-width: 768px) {
+                width: 24px;
+                height: 24px;
+                margin-right: 15px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            font-size: 16px;
         }
     }
 }

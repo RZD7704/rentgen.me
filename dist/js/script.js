@@ -82,7 +82,7 @@ window.onload = function() {
     
     loadCharts();
 
-    var swiper = new Swiper('.swiper-container', {
+    var swiperChief = new Swiper('.chief-profiles__swiper', {
         slidesPerView: 2,
         spaceBetween: 20,
         breakpoints: {
@@ -110,6 +110,31 @@ window.onload = function() {
             prevEl: '.chief-profiles__btn-prev',
         },
     });
+
+    var swiperMain = new Swiper('.diagnostic-slider__container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.diagnostic-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+            // when window width is <= 499px
+            320: {
+                slidesPerView: 1,
+                spaceBetweenSlides: 15
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetweenSlides: 20
+            },
+            // when window width is <= 999px
+            992: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 20
+            }
+        }
+      });
     
 };
 

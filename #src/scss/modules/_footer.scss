@@ -75,6 +75,7 @@
         letter-spacing: 0.02em;
         color: #8D9396;
         margin-bottom: 5px;
+        transition: all .5s;
 
         &:last-child {
             margin-bottom: 0;
@@ -82,7 +83,7 @@
 
         &:hover {
             text-decoration: none;
-            color: #8D9396;
+            color: #A481DE;
         }
 
         @media (min-width: 768px) {
@@ -108,13 +109,14 @@
         font-size: 12px;
         letter-spacing: 0.01em;
         color: #A481DE;
+        transition: all .5s;
 
         @media (min-width: 992px) {
             font-size: 16px;
         }
 
         &:hover {
-            color: #A481DE;
+            color: #391a6b;
             text-decoration: none;
         }
     }

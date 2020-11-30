@@ -66,7 +66,7 @@
                         </ul>
                     </div>
                     <div class="row">
-                        <div class="col-md-10 col-xl-6 offset-md-1 offset-xl-3">
+                        <div class="col-md-10 col-xl-6 mx-auto">
                             <div class="tab-content" id="myTabContent">
                                 <div class="registration-content tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">
                                     <div class="general-head pt-4 pb-3">
@@ -78,8 +78,15 @@
                                             <input class="registration-input__form" type="text" placeholder="Введіть дані">
                                         </div>
                                         <div class="registration-gender pb-3">
-                                            <button class="registration-gender__btn active">чоловіча</button>
-                                            <button class="registration-gender__btn">жіноча</button>
+                                            <div class="registration-gender__btn">
+                                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                                <label for="radio-1">чоловіча</label>
+                                            </div>
+                                             
+                                            <div class="registration-gender__btn">
+                                                <input id="radio-2" type="radio" name="radio" value="2">
+                                                <label for="radio-2">жіноча</label>
+                                            </div>
                                         </div>
                                         <div class="registration-date pb-3">
                                             <div class="registration-date__headline">Дата народження:</div>
@@ -164,7 +171,12 @@
                                         </div>
                                         <div class="registration-input pb-3">
                                             <div class="registration-input__headline">Медична інформаційна система</div>
-                                            <input class="registration-input__form" type="text" placeholder="Введіть дані">
+                                            <select class="registration-selects__select ml-0 w-100" name="select">
+                                                <option disabled selected>Оберіть</option>
+                                                <option value="value1">E67890</option> 
+                                                <option value="value2">E67890</option>
+                                                <option value="value3">E67890</option>
+                                            </select>
                                         </div>
                                         <div class="registration-input pb-3">
                                             <div class="registration-input__headline">ІПН або ЄДРПОУ</div>
@@ -177,7 +189,7 @@
                                         <div class="general-head pt-3 pb-3">
                                             <h2 class="general-head__title">Про медичний центр</h2>
                                         </div>
-                                        <div class="registration-selects">
+                                        <div class="registration-selects pb-3">
                                             <select class="registration-selects__select" name="select">
                                                 <option disabled selected>Оберіть область</option>
                                                 <option value="value1">Значение 1</option> 
@@ -186,14 +198,13 @@
                                                 <option value="value3">Значение 4</option>
                                                 <option value="value3">Значение 5</option>
                                             </select>
-                                            <select class="registration-selects__select" name="select">
-                                                <option disabled selected>Оберіть область</option>
-                                                <option value="value1">Значение 1</option> 
-                                                <option value="value2">Значение 2</option>
-                                                <option value="value3">Значение 3</option>
-                                                <option value="value3">Значение 4</option>
-                                                <option value="value3">Значение 5</option>
-                                            </select>
+                                            <div class="registration-input">
+                                                <input class="registration-input__form" type="tel" placeholder="Введіть місто">
+                                            </div>
+                                        </div>
+                                        <div class="registration-input pb-3">
+                                            <div class="registration-input__headline">Адреса</div>
+                                            <input class="registration-input__form" type="tel" placeholder="Введіть данні">
                                         </div>
                                         <div class="general-head pt-3 pb-3">
                                             <h2 class="general-head__title">Контактні дані</h2>
@@ -255,7 +266,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="doctor-appeal-open.html">Часті запитання</a>
+                <a class="footer-question__link" href="user-appeal-registration.html">Часті запитання</a>
             </div>
         </div>
     </div>

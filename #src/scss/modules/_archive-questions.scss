@@ -43,9 +43,9 @@
         border-left: none;
         border-right: none;
         border-top: none;
-        border-bottom: 2px solid;
-        border-image: linear-gradient(to right, rgba(89, 226, 226, 1),
-                rgba(134, 62, 255, 0)) 47% 50%;
+        border-bottom: 3px solid transparent;
+        border-image: linear-gradient(to left, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 110%);
+        border-image-slice: 1;
         padding-bottom: 15px;
         height: 100%;
         display: flex;
