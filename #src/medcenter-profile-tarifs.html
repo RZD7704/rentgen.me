@@ -20,12 +20,12 @@
                 <div class="container">
                     <div class="general-head pt-1">
                         <h2 class="general-head__title">Мій профіль</h2>
-                        <a class="general-head__btn" href="#">
+                        <button class="general-head__btn editing-btn-js background-transparent" type="button">
                             <svg class="general-head__btn-icon">
                                 <use xlink:href="img/icons/icons.svg#editing-icon"></use>
                             </svg>
                             Редагувати
-                        </a>
+                        </button>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-4">
@@ -106,29 +106,67 @@
                                 </div>
                             </div> -->
                             <div class="profile-mask__list">
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Місто:</div>
-                                    <div class="profile-mask__list-desc">Полтава</div>
+                                <div class="profile-mask__list-edited">
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Стаж роботи:</div>
+                                        <div class="profile-mask__list-desc">9 років</div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Місто:</div>
+                                        <div class="profile-mask__list-desc">Полтава</div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Місце роботи:</div>
+                                        <div class="profile-mask__list-desc">УМСА</div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Спеціалізація:</div>
+                                        <div class="profile-mask__list-desc">лікар радіолог, рентгенолог ІІ категорії</div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Діагностики:</div>
+                                        <div class="profile-mask__list-desc">КТ, МРТ</div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Про лікаря:</div>
+                                        <div class="profile-mask__list-desc">Опис відсутній</div>
+                                    </div>
                                 </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">Адреса:</div>
-                                    <div class="profile-mask__list-desc">м. Полтава вул. Сінна 3 </div>
-                                </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">ПІБ директора:</div>
-                                    <div class="profile-mask__list-desc">Матковський Юрій Володимирович</div>
-                                </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">ІПН або ЄДРПОУ</div>
-                                    <div class="profile-mask__list-desc">404956789</div>
-                                </div>
-                                <div class="profile-mask__list-wgt">
-                                    <div class="profile-mask__list-headline">IBAN</div>
-                                    <div class="profile-mask__list-desc">E67890</div>
-                                </div>
-                                <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
-                                    <div class="profile-mask__list-headline max-width">Медична інформаційна система</div>
-                                    <div class="profile-mask__list-desc">E67890</div>
+                                <div class="profile-mask__list-editing">
+                                    <!-- <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Стаж роботи:</div>
+                                        <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Місто:</div>
+                                        <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Місце роботи:</div>
+                                        <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Спеціалізація:</div>
+                                        <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Про лікаря:</div>
+                                        <div class="d-flex">
+                                            <div class="profile-mask__list-wgt-btn radio-btn-js mr-2">
+                                                <input class="profile-mask__list-wgt-btn--input" id="radioKT" type="checkbox" name="radio1" value="1">
+                                                <label for="radioKT">КТ</label>
+                                            </div>
+                                            <div class="profile-mask__list-wgt-btn radio-btn-js">
+                                                <input class="profile-mask__list-wgt-btn--input" id="radioMRT" type="checkbox" name="radio2" value="1">
+                                                <label for="radioMRT">МРТ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-mask__list-wgt">
+                                        <div class="profile-mask__list-headline">Про лікаря:</div>
+                                        <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <button class="profile-mask__list-editing-btn mx-auto d-block mt-2" type="button">Зберегти</button> -->
                                 </div>
                             </div>
                             <div class="profile-mask__nav d-lg-none pt-2">

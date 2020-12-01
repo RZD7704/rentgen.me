@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="advantages-download">
-                                    <button class="advantages-download__btn" type="button">Завантажити знімки</button>
+                                    <button class="advantages-download__btn" type="button" data-toggle="modal" data-target="#logModal">Завантажити знімки</button>
                                 </div>
                             </div>
                             <div class="banner-social">
@@ -143,7 +143,7 @@
                                     <div class="price__wgt-col--num">1000 UAH</div>
                                 </div>
                             </div>
-                            <button class="price__wgt-btn" type="button">Завантажити знімки</button>
+                            <button class="price__wgt-btn" type="button" data-toggle="modal" data-target="#logModal">Завантажити знімки</button>
                         </div>
                         <div class="price__wgt">
                             <div class="price__wgt-head">
@@ -168,7 +168,7 @@
                                     <div class="price__wgt-col--num">1000 UAH</div>
                                 </div>
                             </div>
-                            <button class="price__wgt-btn" type="button">Розпочати співпрацю</button>
+                            <button class="price__wgt-btn" type="button" data-toggle="modal" data-target="#logModal">Розпочати співпрацю</button>
                         </div>
                     </div>
                 </div>
@@ -188,14 +188,18 @@
                         <div class="doctors-wgt">
                             <div class="doctors-wgt__container">
                                 <div class="doctors-wgt__photo">
-                                <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-1.png" alt="Doctor">
+                                    <a href="single-doctors.html">
+                                        <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-1.png" alt="Doctor">
+                                    </a>
                                 </div>
                                 <div class="doctors-wgt__content">
                                     <div class="doctors-wgt__head">
                                         <div class="doctors-wgt__head-col">
-                                            <h3 class="doctors-wgt__head-name">
-                                                Нестуля Катерина Ігорівна
-                                            </h3>
+                                            <a href="single-doctors.html">
+                                                <h3 class="doctors-wgt__head-name">
+                                                    Нестуля Катерина Ігорівна
+                                                </h3>
+                                            </a>
                                             <div class="doctors-wgt__head-rate">
                                                 <svg class="doctors-wgt__head-rate--icon">
                                                     <use xlink:href="img/icons/icons.svg#star-icon"></use>
@@ -257,14 +261,18 @@
                         <div class="doctors-wgt">
                             <div class="doctors-wgt__container">
                                 <div class="doctors-wgt__photo">
-                                <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-2.png" alt="Doctor">
+                                    <a href="#">
+                                        <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-2.png" alt="Doctor">
+                                    </a>
                                 </div>
                                 <div class="doctors-wgt__content">
                                     <div class="doctors-wgt__head">
                                         <div class="doctors-wgt__head-col">
-                                            <h3 class="doctors-wgt__head-name">
-                                                Нестуля Катерина Ігорівна
-                                            </h3>
+                                            <a href="#">
+                                                <h3 class="doctors-wgt__head-name">
+                                                    Нестуля Катерина Ігорівна
+                                                </h3>
+                                            </a>
                                             <div class="doctors-wgt__head-rate">
                                                 <svg class="doctors-wgt__head-rate--icon">
                                                     <use xlink:href="img/icons/icons.svg#star-icon"></use>
@@ -326,14 +334,18 @@
                         <div class="doctors-wgt">
                             <div class="doctors-wgt__container">
                                 <div class="doctors-wgt__photo">
-                                <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-1.png" alt="Doctor">
+                                    <a href="#">
+                                        <img class="doctors-wgt__photo--img img-fluid" src="img/doctor-image-1.png" alt="Doctor">
+                                    </a>
                                 </div>
                                 <div class="doctors-wgt__content">
                                     <div class="doctors-wgt__head">
                                         <div class="doctors-wgt__head-col">
-                                            <h3 class="doctors-wgt__head-name">
-                                                Нестуля Катерина Ігорівна
-                                            </h3>
+                                            <a href="#">
+                                                <h3 class="doctors-wgt__head-name">
+                                                    Нестуля Катерина Ігорівна
+                                                </h3>
+                                            </a>
                                             <div class="doctors-wgt__head-rate">
                                                 <svg class="doctors-wgt__head-rate--icon">
                                                     <use xlink:href="img/icons/icons.svg#star-icon"></use>
@@ -396,50 +408,50 @@
                     <div class="diagnostic-slider">
                         <div class="swiper-container diagnostic-slider__container">
                             <div class="swiper-wrapper diagnostic-slider__wrapper">
-                              <div class="swiper-slide diagnostic-slider__slide">
-                                  <div class="diagnostic-slide">
-                                      <div class="diagnostic-slide__content">
-                                          <div class="diagnostic-slide__content-num">01</div>
-                                          <div class="diagnostic-slide__content-txt">Мамографія</div>
-                                      </div>
-                                      <div class="diagnostic-slide__photo">
-                                          <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="swiper-slide diagnostic-slider__slide">
-                                <div class="diagnostic-slide">
-                                    <div class="diagnostic-slide__content">
-                                        <div class="diagnostic-slide__content-num">02</div>
-                                        <div class="diagnostic-slide__content-txt">Рентген</div>
-                                    </div>
-                                    <div class="diagnostic-slide__photo">
-                                        <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
-                                    </div>
+                                <div class="swiper-slide diagnostic-slider__slide">
+                                    <a class="diagnostic-slide" href="#">
+                                        <div class="diagnostic-slide__content">
+                                            <div class="diagnostic-slide__content-num">01</div>
+                                            <div class="diagnostic-slide__content-txt">Мамографія</div>
+                                        </div>
+                                        <div class="diagnostic-slide__photo">
+                                            <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diagnostic-slider__slide">
-                                <div class="diagnostic-slide">
-                                    <div class="diagnostic-slide__content">
-                                        <div class="diagnostic-slide__content-num">03</div>
-                                        <div class="diagnostic-slide__content-txt">Флюрографія</div>
-                                    </div>
-                                    <div class="diagnostic-slide__photo">
-                                        <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
-                                    </div>
+                                <div class="swiper-slide diagnostic-slider__slide">
+                                    <a class="diagnostic-slide" href="#">
+                                        <div class="diagnostic-slide__content">
+                                            <div class="diagnostic-slide__content-num">02</div>
+                                            <div class="diagnostic-slide__content-txt">Рентген</div>
+                                        </div>
+                                        <div class="diagnostic-slide__photo">
+                                            <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="swiper-slide diagnostic-slider__slide">
-                                <div class="diagnostic-slide">
-                                    <div class="diagnostic-slide__content">
-                                        <div class="diagnostic-slide__content-num">01</div>
-                                        <div class="diagnostic-slide__content-txt">Мамографія</div>
-                                    </div>
-                                    <div class="diagnostic-slide__photo">
-                                        <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
-                                    </div>
+                                <div class="swiper-slide diagnostic-slider__slide">
+                                    <a class="diagnostic-slide" href="#">
+                                        <div class="diagnostic-slide__content">
+                                            <div class="diagnostic-slide__content-num">03</div>
+                                            <div class="diagnostic-slide__content-txt">Флюрографія</div>
+                                        </div>
+                                        <div class="diagnostic-slide__photo">
+                                            <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
+                                <div class="swiper-slide diagnostic-slider__slide">
+                                    <a class="diagnostic-slide" href="#">
+                                        <div class="diagnostic-slide__content">
+                                            <div class="diagnostic-slide__content-num">01</div>
+                                            <div class="diagnostic-slide__content-txt">Мамографія</div>
+                                        </div>
+                                        <div class="diagnostic-slide__photo">
+                                            <img class="diagnostic-slide__photo-img" src="img/slider-img.png" alt="Photo">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination diagnostic-pagination"></div>
@@ -469,9 +481,7 @@
                                 <a href="single-news.html">
                                     <h3 class="news-wgt__description-title">Чи потрібно робити КТ при коронавірусі?</h3>
                                 </a>
-                                <a href="single-news.html">
-                                    <p class="news-wgt__description-txt">У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника...</p>
-                                </a>
+                                <p class="news-wgt__description-txt">У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника...</p>
                                 <div class="news-wgt__description-list d-none d-lg-flex">
                                     <div class="news-wgt__description-list--item">
                                         <svg class="news-wgt__description-list--icon">
@@ -500,9 +510,7 @@
                                 <a href="single-news.html">
                                     <h3 class="news-wgt__description-title">Чи потрібно робити КТ при коронавірусі?</h3>
                                 </a>
-                                <a href="single-news.html">
-                                    <p class="news-wgt__description-txt">У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника. У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника,У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника</p>
-                                </a>
+                                <p class="news-wgt__description-txt">У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника. У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника,У більшості пацієнтів з COVID-19 часто зника У більшості пацієнтів з COVID-19 часто зника</p>
                                 <div class="news-wgt__description-list d-none d-lg-flex">
                                     <div class="news-wgt__description-list--item">
                                         <svg class="news-wgt__description-list--icon">
