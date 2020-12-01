@@ -122,6 +122,7 @@ window.onload = function() {
             `;
             photoEditing = document.createElement('a');
             photoEditing.classList.add('profile-mask__photo-editing');
+            photoEditing.setAttribute("href", "#");
             photoEditing.innerHTML = `<span>+</span>`;
             parentPhoto.appendChild(photoEditing);
             flag = false;
