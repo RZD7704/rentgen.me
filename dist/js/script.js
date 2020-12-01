@@ -68,11 +68,12 @@ window.onload = function() {
     function addEditing() {
         const editingBtn = document.querySelector('.editing-btn-js');
         let flag = true;
-        // let inputVal;
+        let inputVal;
 
         editingBtn.addEventListener('click', function(e) {
             e.preventDefault();
             creatingEditingFields();
+          
         });
         function creatingEditingFields() {
             const fieldsBlock = document.querySelector('.profile-mask__list-editing'),
@@ -82,43 +83,44 @@ window.onload = function() {
 
             let saveBtn,
                 photoEditingInput,
-                photoEditingLabel;
+                photoEditingLabelб,
+                value;
 
             if(!flag) return;
             archivBlock.innerHTML = "";
             fieldsBlock.innerHTML = `
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Стаж роботи:</div>
-                    <input class="profile-mask__list-field" id="input-edit" type="text" placeholder="Введіть дані">
+                    <input class="profile-mask__list-field editing-input-js" id="input1" type="text" placeholder="Введіть дані">
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Місто:</div>
-                    <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Місце роботи:</div>
-                    <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Спеціалізація:</div>
-                    <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Оберіть тип:</div>
                     <div class="d-flex">
                         <div class="profile-mask__list-wgt-btn radio-btn-js mr-2">
                             <input class="profile-mask__list-wgt-btn--input" id="radioKT" type="checkbox" name="radio1" value="1">
-                            <label for="radioKT">КТ</label>
+                            <label class="checkbox-editing-js" for="radioKT">КТ</label>
                         </div>
                         <div class="profile-mask__list-wgt-btn radio-btn-js">
                             <input class="profile-mask__list-wgt-btn--input" id="radioMRT" type="checkbox" name="radio2" value="1">
-                            <label for="radioMRT">МРТ</label>
+                            <label class="checkbox-editing-js" for="radioMRT">МРТ</label>
                         </div>
                     </div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Про лікаря:</div>
-                    <textarea class="profile-mask__list-field profile-mask__list-field_textarea" name="About" placeholder="Введіть дані"></textarea>
+                    <textarea class="profile-mask__list-field profile-mask__list-field_textarea editing-input-js" name="About" placeholder="Введіть дані"></textarea>
                 </div>
                 <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
             `;
@@ -128,7 +130,6 @@ window.onload = function() {
             photoEditingInput.setAttribute("name", "file");
             photoEditingInput.setAttribute("id", "fileEditing");
 
-
             photoEditingLabel = document.createElement('label');
             photoEditingLabel.classList.add('profile-mask__photo-editing');
             photoEditingLabel.setAttribute("for", "fileEditing");
@@ -136,17 +137,43 @@ window.onload = function() {
             parentPhoto.appendChild(photoEditingInput);
             parentPhoto.appendChild(photoEditingLabel);
             flag = false;
-            // inputVal = document.getElementById('elem1').value;
+
+            let checkboxes = document.querySelectorAll('.checkbox-editing-js'),
+                valueCheckboxArr = [],
+                checkboxesValue;
+
+            checkboxes.forEach(item => {
+                item.addEventListener('click', function(e){
+                    console.log('click');
+                    if(!this.classList.contains('active')) {
+                        this.classList.add('active');
+                    } else {
+                        this.classList.remove('active');
+                    }
+                });
+            }),
 
             saveBtn = document.querySelector('.profile-mask__list-editing-btn');
+
             saveBtn.addEventListener('click', function(e) {
                 e.preventDefault();
-                creatingEditedFields(photoEditingInput, photoEditingLabel);
-                console.log('CLICK');
+                inputVal = document.querySelectorAll('.editing-input-js');
+                let valueArr = [];
+                inputVal.forEach((item) => {
+                    valueArr.push(item.value);
+                    console.log(valueArr);
+                });
+                checkboxes.forEach(item => {
+                    if(item.classList.contains('active')) {
+                        checkboxesValue = item.innerHTML;
+                        valueCheckboxArr.push(checkboxesValue);
+                    }
+                });
+                creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr);
             });
         }
 
-        function creatingEditedFields(photoEditingInput, photoEditingLabel) {
+        function creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr) {
             const fieldsBlock = document.querySelector('.profile-mask__list-edited'),
                   parentFields = document.querySelector('.profile-mask__list'),
                   archivBlock = document.querySelector('.profile-mask__list-editing');
@@ -157,27 +184,27 @@ window.onload = function() {
             fieldsBlock.innerHTML = `
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Стаж роботи:</div>
-                    <div class="profile-mask__list-desc">9 років</div>
+                    <div class="profile-mask__list-desc">${valueArr[0]}</div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Місто:</div>
-                    <div class="profile-mask__list-desc">Полтава</div>
+                    <div class="profile-mask__list-desc">${valueArr[1]}</div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Місце роботи:</div>
-                    <div class="profile-mask__list-desc">УМСА</div>
+                    <div class="profile-mask__list-desc">${valueArr[2]}</div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Спеціалізація:</div>
-                    <div class="profile-mask__list-desc">лікар радіолог, рентгенолог ІІ категорії</div>
+                    <div class="profile-mask__list-desc">${valueArr[3]}</div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Діагностики:</div>
-                    <div class="profile-mask__list-desc">КТ, МРТ</div>
+                    <div class="profile-mask__list-desc">${valueCheckboxArr}</div>
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Про лікаря:</div>
-                    <div class="profile-mask__list-desc">Опис відсутній</div>
+                    <div class="profile-mask__list-desc">${valueArr[4]}</div>
                 </div>
             `;
             parentFields.append(fieldsBlock);
