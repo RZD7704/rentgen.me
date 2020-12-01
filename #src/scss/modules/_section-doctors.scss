@@ -53,8 +53,14 @@
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.02em;
-        color: #0B0A0A;
+        color: #363636;
         padding-bottom: 5px;
+
+        transition: all .3s;
+
+        &:hover {
+            color: #090909;
+        }
 
         @media (min-width: 768px) {
             font-size: 18px;

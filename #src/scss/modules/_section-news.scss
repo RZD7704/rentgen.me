@@ -22,6 +22,11 @@
         letter-spacing: 0.04em;
         color: #363636;
         padding-bottom: 10px;
+        transition: all .3s;
+
+        &:hover {
+            color: #090909;
+        }
 
         @media (min-width: 768px) {
             font-size: 22px;

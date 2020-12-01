@@ -80,7 +80,9 @@ window.onload = function() {
                   archivBlock = document.querySelector('.profile-mask__list-edited'),
                   parentPhoto = document.querySelector('.profile-mask__photo');
 
-            let photoEditing;
+            let saveBtn,
+                photoEditingInput,
+                photoEditingLabel;
 
             if(!flag) return;
             archivBlock.innerHTML = "";
@@ -116,32 +118,41 @@ window.onload = function() {
                 </div>
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Про лікаря:</div>
-                    <input class="profile-mask__list-field" type="text" placeholder="Введіть дані">
+                    <textarea class="profile-mask__list-field profile-mask__list-field_textarea" name="About" placeholder="Введіть дані"></textarea>
                 </div>
                 <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
             `;
-            photoEditing = document.createElement('a');
-            photoEditing.classList.add('profile-mask__photo-editing');
-            photoEditing.setAttribute("href", "#");
-            photoEditing.innerHTML = `<span>+</span>`;
-            parentPhoto.appendChild(photoEditing);
+            photoEditingInput = document.createElement('input');
+            photoEditingInput.classList.add('profile-mask__photo-editing-input');
+            photoEditingInput.setAttribute("type", "file");
+            photoEditingInput.setAttribute("name", "file");
+            photoEditingInput.setAttribute("id", "fileEditing");
+
+
+            photoEditingLabel = document.createElement('label');
+            photoEditingLabel.classList.add('profile-mask__photo-editing');
+            photoEditingLabel.setAttribute("for", "fileEditing");
+            photoEditingLabel.innerHTML = `<span>+</span>`;
+            parentPhoto.appendChild(photoEditingInput);
+            parentPhoto.appendChild(photoEditingLabel);
             flag = false;
             // inputVal = document.getElementById('elem1').value;
 
             saveBtn = document.querySelector('.profile-mask__list-editing-btn');
             saveBtn.addEventListener('click', function(e) {
                 e.preventDefault();
-                creatingEditedFields(photoEditing);
-                // console.log(inputVal);
+                creatingEditedFields(photoEditingInput, photoEditingLabel);
+                console.log('CLICK');
             });
         }
 
-        function creatingEditedFields(photoParent) {
+        function creatingEditedFields(photoEditingInput, photoEditingLabel) {
             const fieldsBlock = document.querySelector('.profile-mask__list-edited'),
                   parentFields = document.querySelector('.profile-mask__list'),
                   archivBlock = document.querySelector('.profile-mask__list-editing');
 
-            photoParent.remove();
+            photoEditingInput.remove();
+            photoEditingLabel.remove();
             archivBlock.innerHTML = "";
             fieldsBlock.innerHTML = `
                 <div class="profile-mask__list-wgt">

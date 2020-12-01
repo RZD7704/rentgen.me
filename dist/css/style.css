@@ -362,6 +362,15 @@ body {
   border-radius: 15px;
 }
 
+.profile-mask__photo-editing-input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 .profile-mask__photo-editing {
   position: absolute;
   left: 50%;
@@ -375,6 +384,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .profile-mask__photo-editing span {
@@ -539,6 +549,14 @@ body {
   border-radius: 5px;
   padding: 10px 15px;
   width: 100%;
+  resize: none;
+  height: 42px;
+}
+
+.profile-mask__list-field_textarea {
+  height: auto;
+  resize: none;
+  max-height: 42px;
 }
 
 .profile-mask__list-field::-moz-placeholder {
@@ -860,7 +878,6 @@ body {
 
 .header-logo__photo {
   display: block;
-  width: 90px;
   height: 45px;
 }
 
@@ -1182,8 +1199,13 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #0B0A0A;
+  color: #363636;
   padding-bottom: 5px;
+  transition: all .3s;
+}
+
+.doctors-wgt__head-name:hover {
+  color: #090909;
 }
 
 .doctors-wgt__head-rate--icon {
@@ -1340,6 +1362,11 @@ body {
   letter-spacing: 0.04em;
   color: #363636;
   padding-bottom: 10px;
+  transition: all .3s;
+}
+
+.news-wgt__description-title:hover {
+  color: #090909;
 }
 
 .news-wgt__description-txt {
@@ -1397,11 +1424,17 @@ body {
 }
 
 .archive-news-wgt__description-title {
+  font-family: "Playfair Display", serif;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.04em;
   color: #363636;
   padding-bottom: 10px;
+  transition: all .3s;
+}
+
+.archive-news-wgt__description-title:hover {
+  color: #090909;
 }
 
 .archive-news-wgt__description-txt {
@@ -3250,7 +3283,6 @@ body {
 
 .footer__wgt-logo {
   display: block;
-  width: 100px;
   height: 50px;
 }
 
@@ -3298,12 +3330,13 @@ body {
 }
 
 .footer_theme_white {
-  background: transparent;
+  background: #F5F5F5;
 }
 
 .footer-question {
   text-align: center;
-  margin: 10px 0;
+  padding: 10px 0;
+  border-top: 1px solid #8D9396;
 }
 
 .footer-question__link {
@@ -3638,7 +3671,6 @@ body {
   }
 
   .header-logo__photo {
-    width: 110px;
     height: 65px;
   }
 
