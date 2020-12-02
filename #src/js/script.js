@@ -77,18 +77,19 @@ window.onload = function() {
         });
         function creatingEditingFields() {
             const fieldsBlock = document.querySelector('.profile-mask__list-editing'),
-                //   parentFields = document.querySelector('.profile-mask__list'),
+                  doctorPage = document.querySelector('.section-doctor-profile'),
+                  userPage = document.querySelector('.section-user-profile'),
+                  medcenterPage = document.querySelector('.section-medcenter-profile'),
                   archivBlock = document.querySelector('.profile-mask__list-edited'),
                   parentPhoto = document.querySelector('.profile-mask__photo');
 
             let saveBtn,
-                photoEditingInput,
-                photoEditingLabelб,
-                value;
+                photoEditingInput;
 
             if(!flag) return;
             archivBlock.innerHTML = "";
-            fieldsBlock.innerHTML = `
+            if(doctorPage) {
+                fieldsBlock.innerHTML = `
                 <form class="editing-form" action="#">
                     <div class="profile-mask__list-wgt">
                         <div class="profile-mask__list-headline">Стаж роботи:</div>
@@ -126,6 +127,60 @@ window.onload = function() {
                     <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
                 </form>
             `;
+            } else if (userPage) {
+                fieldsBlock.innerHTML = `
+                <form class="editing-form" action="#">
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Стаж роботи:</div>
+                        <input class="profile-mask__list-field editing-input-js" id="input1" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Місто:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Місце роботи:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Спеціалізація:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
+                </form>
+                `;
+            } else if (medcenterPage) {
+                fieldsBlock.innerHTML = `
+                <form class="editing-form" action="#">
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Місто:</div>
+                        <input class="profile-mask__list-field editing-input-js" id="input1" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Адреса:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">ПІБ директора:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">ІПН або ЄДРПОУ</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">IBAN</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
+                        <div class="profile-mask__list-headline max-width pb-2">Медична інформаційна система</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
+                </form>
+            `;
+            }
+           
             photoEditingInput = document.createElement('input');
             photoEditingInput.classList.add('profile-mask__photo-editing-input');
             photoEditingInput.setAttribute("type", "file");
@@ -171,11 +226,11 @@ window.onload = function() {
                         valueCheckboxArr.push(checkboxesValue);
                     }
                 });
-                creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr);
+                creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr, doctorPage, userPage, medcenterPage);
             });
         }
 
-        function creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr) {
+        function creatingEditedFields(photoEditingInput, photoEditingLabel, valueArr, valueCheckboxArr, doctorPage, userPage, medcenterPage) {
             const fieldsBlock = document.querySelector('.profile-mask__list-edited'),
                   parentFields = document.querySelector('.profile-mask__list'),
                   archivBlock = document.querySelector('.profile-mask__list-editing');
@@ -183,7 +238,8 @@ window.onload = function() {
             photoEditingInput.remove();
             photoEditingLabel.remove();
             archivBlock.innerHTML = "";
-            fieldsBlock.innerHTML = `
+            if(doctorPage) {
+                fieldsBlock.innerHTML = `
                 <div class="profile-mask__list-wgt">
                     <div class="profile-mask__list-headline">Стаж роботи:</div>
                     <div class="profile-mask__list-desc">${valueArr[0]}</div>
@@ -209,6 +265,53 @@ window.onload = function() {
                     <div class="profile-mask__list-desc">${valueArr[4]}</div>
                 </div>
             `;
+            } else if (userPage) {
+                fieldsBlock.innerHTML = `
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Стать:</div>
+                    <div class="profile-mask__list-desc">${valueArr[0]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Дата народження:</div>
+                    <div class="profile-mask__list-desc">${valueArr[1]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Номер телефону:</div>
+                    <div class="profile-mask__list-desc">${valueArr[2]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Пошта:</div>
+                    <div class="profile-mask__list-desc">${valueArr[3]}</div>
+                </div>
+                `;
+            } else if(medcenterPage) {
+                fieldsBlock.innerHTML = `
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Місто:</div>
+                    <div class="profile-mask__list-desc">${valueArr[0]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">Адреса:</div>
+                    <div class="profile-mask__list-desc">${valueArr[1]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">ПІБ директора:</div>
+                    <div class="profile-mask__list-desc">${valueArr[2]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">ІПН або ЄДРПОУ</div>
+                    <div class="profile-mask__list-desc">${valueArr[3]}</div>
+                </div>
+                <div class="profile-mask__list-wgt">
+                    <div class="profile-mask__list-headline">IBAN</div>
+                    <div class="profile-mask__list-desc">${valueArr[4]}</div>
+                </div>
+                <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
+                    <div class="profile-mask__list-headline max-width pb-2">Медична інформаційна система</div>
+                    <div class="profile-mask__list-desc"> <a class="profile-mask__list-desc--link" href="#">${valueArr[5]}</a></div>
+                </div>
+                `;
+            }
             parentFields.append(fieldsBlock);
             flag = true;
         }
@@ -220,33 +323,29 @@ window.onload = function() {
             newInput,
             i = 1;
 
-            btnAdd.addEventListener('click', (e) => {
-                e.preventDefault();
-                i++;
-                if(i > 2) {
-                    btnAdd.style.cssText = `
-                        color: #8D9396;
-                    `;
-                }
+        btnAdd.addEventListener('click', (e) => {
+            e.preventDefault();
+            i++;
+            if(i > 2) {
+                btnAdd.style.cssText = `
+                    color: #8D9396;
+                `;
+                return false;
+            }
 
-                if(i > 3) {
-                    btnAdd.style.cssText = `
-                        color: #8D9396;
-                    `;
-                    return false;
-                } else {
-                    newInput = document.createElement('input');
-                    newInput.classList.add('registration-input__form');
-                    newInput.setAttribute("type", "text");
-                    newInput.setAttribute("placeholder", "Вставте посилання");
-                    newInput.style.cssText = `
-                        margin-top: 10px;
-                    `;
-                    parent.appendChild(newInput);
-                    console.log(i);
-                }
-          
-            });
+            if(i > 3) {
+            } else {
+                newInput = document.createElement('input');
+                newInput.classList.add('registration-input__form');
+                newInput.setAttribute("type", "text");
+                newInput.setAttribute("placeholder", "Вставте посилання");
+                newInput.style.cssText = `
+                    margin-top: 10px;
+                `;
+                parent.appendChild(newInput);
+                console.log(i);
+            }
+        });
     }
 
     function checkingBlocks() {

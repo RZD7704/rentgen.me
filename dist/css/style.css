@@ -939,16 +939,22 @@ body {
   color: #5d359c;
 }
 
+.header-nav__log-btn--img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
 .header-dropdown__menu {
-  transform: translate3d(-105px, 28px, 0px) !important;
+  transform: translate3d(-115px, 28px, 0px) !important;
 }
 
 .header-dropdown__item {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 0.01em;
   color: #363636;
-  padding: 20px;
+  padding: 10px;
   transition: all .3s;
 }
 
@@ -3733,6 +3739,15 @@ body {
 
   .header-nav__phone-link--num {
     display: block;
+  }
+
+  .header-dropdown__menu {
+    transform: translate3d(-105px, 28px, 0px) !important;
+  }
+
+  .header-dropdown__item {
+    font-size: 16px;
+    padding: 20px;
   }
 
   .banner__col_w60 {
