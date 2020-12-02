@@ -226,11 +226,12 @@
                                                 </svg>
                                                 Результати
                                             </a>
-                                            <div class="appeal-results__delete">
+                                            <button class="appeal-results__delete" type="button">
                                                 <svg class="appeal-results__delete--icon">
                                                     <use xlink:href="img/icons/icons.svg#delete-icon"></use>
                                                 </svg>
-                                            </div>
+                                            </button>
+                                            <div class="appeal-results__tultipe-delete">Видалити</div>
                                         </div>
                                         <div class="appeal-results__wgt">
                                             <a class="appeal-results__wgt-link" href="#">
@@ -239,11 +240,12 @@
                                                 </svg>
                                                 Результати
                                             </a>
-                                            <div class="appeal-results__delete">
+                                            <button class="appeal-results__delete" type="button">
                                                 <svg class="appeal-results__delete--icon">
                                                     <use xlink:href="img/icons/icons.svg#delete-icon"></use>
                                                 </svg>
-                                            </div>
+                                            </button>
+                                            <div class="appeal-results__tultipe-delete">Видалити</div>
                                         </div>
                                         <div class="appeal-results__wgt">
                                             <input type="file" name="file" id="file" class="inputfile" />
@@ -255,7 +257,6 @@
                                             </label>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="mask-open__head">
                                     <div class="mask-open__head-title">Діагноз:</div>
@@ -273,11 +274,15 @@
                                     <div class="appeal-chat">
                                         <div class="appeal-chat__wgt">
                                             <div class="appeal-chat__wgt-photo mr-3">
-                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
+                                                <a href="#">
+                                                    <img class="appeal-chat__wgt-photo--img img-fluid" src="img/doctor-image-3.png" alt="Photo">
+                                                </a>
                                             </div>
                                             <div class="appeal-chat__wgt-content">
                                                 <div class="appeal-chat__wgt-head">
-                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    <a href="#">
+                                                        <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    </a>
                                                     <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
                                                 </div>
                                                 <div class="appeal-chat__wgt-body">
@@ -289,14 +294,18 @@
                                             <div class="appeal-chat__wgt-content">
                                                 <div class="appeal-chat__wgt-head">
                                                     <div class="appeal-chat__wgt-date">11 Apr 2020, 18:23</div>
-                                                    <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    <a href="#">
+                                                        <div class="appeal-chat__wgt-name">Марченко Аліна Віталівна</div>
+                                                    </a>
                                                 </div>
                                                 <div class="appeal-chat__wgt-body justify-content-end">
                                                     <div class="appeal-chat__wgt-message">Хочу к вам на приём чтобы назначить лечение, можно?</div>
                                                 </div>
                                             </div>
                                             <div class="appeal-chat__wgt-photo ml-3">
-                                                <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
+                                                <a href="#">
+                                                    <img class="appeal-chat__wgt-photo--img" src="img/doctor-image-3.png" alt="Photo">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -319,11 +328,11 @@
     <div class="footer_theme_grey">
         <div class="container">
             <div class="footer__wrapper">
-                <div class="footer__wgt">
+                <div class="footer__wgt d-flex flex-column justify-content-between">
                     <a href="index.html">
                         <img class="footer__wgt-logo" src="img/icons/icons.svg#logo" alt="Logo">
                     </a>
-                    <div class="footer__wgt-txt pb-1">©TM 2020. All right reserved.</div>
+                    <div class="footer__wgt-txt">©TM 2020. All right reserved.</div>
                 </div>
                 <div class="footer__wgt">
                     <div class="footer__wgt-title">Контакти</div>
@@ -347,7 +356,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="medcenter-profile-appeal.html">Часті запитання</a>
+                <a class="footer-question__link" href="user-appeal-registration.html">Часті запитання</a>
             </div>
         </div>
     </div>

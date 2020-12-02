@@ -18,7 +18,6 @@
         margin-right: 15px;
 
         &--img {
-            width: 100%;
             border-radius: 10px;
         }
     }
@@ -37,6 +36,11 @@
             font-size: 16px;
             letter-spacing: 0.01em;
             color: #0B0A0A;
+            transition: all .3s;
+
+            &:hover {
+                color: #090909;
+            }
         }
 
         &--date {

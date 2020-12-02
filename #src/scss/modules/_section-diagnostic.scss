@@ -1,0 +1,53 @@
+.diagnostic-slide {
+    border: 1px solid rgba(204, 203, 203, 0.4);
+    display: flex;
+    border-radius: 10px;
+
+    &__content {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 15px;
+        // align-items: center;
+    }
+
+    &__content-num {
+        font-weight: 600;
+        font-size: 62px;
+        letter-spacing: 0.04em;
+        color: rgba(164, 129, 222, 0.15);
+        padding-bottom: 5px;
+    }
+
+    &__content-txt {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        color: #12D3CE;
+    }
+
+    &__photo {
+        width: 50%;
+        line-height: 0;
+    }
+
+    &__photo-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.diagnostic-pagination {
+    position: relative;
+    bottom: -10px !important;
+    min-height: 30px;
+}
+
+.diagnostic-pagination .swiper-pagination-bullet-active {
+    background: #A481DE !important;
+}
+
+.diagnostic-pagination .swiper-pagination-bullet {
+    background: #8D9396;
+}

@@ -150,10 +150,30 @@
             background: rgba(164, 129, 222, 0.1);
         }
 
+        &:hover+.appeal-results__tultipe-delete {
+            opacity: 1;
+        }
+
         &--icon {
             width: 20px;
             height: 20px;
         }
+    }
+
+    &__tultipe-delete {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        background: rgba(85, 85, 85, 0.83);
+        border-radius: 5px;
+        padding: 3px 6px;
+        opacity: 0;
+        transition: all .5s;
     }
 
     &__wgt-link {
@@ -244,6 +264,11 @@
         font-size: 16px;
         letter-spacing: 0.01em;
         color: #363636;
+        transition: all .5s;
+
+        &:hover {
+            color: #090909;
+        }
     }
 
     &__wgt-date {

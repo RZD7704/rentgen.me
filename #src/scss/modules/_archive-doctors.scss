@@ -82,6 +82,12 @@
         border-radius: 17.5px;
         padding: 7px 12px;
         display: none;
+        transition: all .3s;
+
+        &:hover {
+            color: #FFFFFF;
+            background: #16b4af;
+        }
 
         @media (min-width: 992px) {
             display: block;

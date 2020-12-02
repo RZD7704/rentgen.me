@@ -34,9 +34,10 @@
         letter-spacing: 0.03em;
         color: #A481DE;
         margin-right: 15px;
+        transition: all .3s;
 
         &:hover {
-            color: #A481DE;
+            color: #5d359c;
         }
 
         @media (min-width: 992px) {

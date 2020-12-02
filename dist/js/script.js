@@ -89,40 +89,42 @@ window.onload = function() {
             if(!flag) return;
             archivBlock.innerHTML = "";
             fieldsBlock.innerHTML = `
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Стаж роботи:</div>
-                    <input class="profile-mask__list-field editing-input-js" id="input1" type="text" placeholder="Введіть дані">
-                </div>
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Місто:</div>
-                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
-                </div>
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Місце роботи:</div>
-                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
-                </div>
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Спеціалізація:</div>
-                    <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
-                </div>
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Оберіть тип:</div>
-                    <div class="d-flex">
-                        <div class="profile-mask__list-wgt-btn radio-btn-js mr-2">
-                            <input class="profile-mask__list-wgt-btn--input" id="radioKT" type="checkbox" name="radio1" value="1">
-                            <label class="checkbox-editing-js" for="radioKT">КТ</label>
-                        </div>
-                        <div class="profile-mask__list-wgt-btn radio-btn-js">
-                            <input class="profile-mask__list-wgt-btn--input" id="radioMRT" type="checkbox" name="radio2" value="1">
-                            <label class="checkbox-editing-js" for="radioMRT">МРТ</label>
+                <form class="editing-form" action="#">
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Стаж роботи:</div>
+                        <input class="profile-mask__list-field editing-input-js" id="input1" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Місто:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Місце роботи:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Спеціалізація:</div>
+                        <input class="profile-mask__list-field editing-input-js" type="text" placeholder="Введіть дані">
+                    </div>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Оберіть тип:</div>
+                        <div class="d-flex">
+                            <div class="profile-mask__list-wgt-btn radio-btn-js mr-2">
+                                <input class="profile-mask__list-wgt-btn--input" id="radioKT" type="checkbox" name="radio1" value="1">
+                                <label class="checkbox-editing-js" for="radioKT">КТ</label>
+                            </div>
+                            <div class="profile-mask__list-wgt-btn radio-btn-js">
+                                <input class="profile-mask__list-wgt-btn--input" id="radioMRT" type="checkbox" name="radio2" value="1">
+                                <label class="checkbox-editing-js" for="radioMRT">МРТ</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="profile-mask__list-wgt">
-                    <div class="profile-mask__list-headline">Про лікаря:</div>
-                    <textarea class="profile-mask__list-field profile-mask__list-field_textarea editing-input-js" name="About" placeholder="Введіть дані"></textarea>
-                </div>
-                <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
+                    <div class="profile-mask__list-wgt">
+                        <div class="profile-mask__list-headline">Про лікаря:</div>
+                        <textarea class="profile-mask__list-field profile-mask__list-field_textarea editing-input-js" name="About" placeholder="Введіть дані"></textarea>
+                    </div>
+                    <button class="profile-mask__list-editing-btn mx-auto d-block mt-2">Зберегти</button>
+                </form>
             `;
             photoEditingInput = document.createElement('input');
             photoEditingInput.classList.add('profile-mask__photo-editing-input');
@@ -212,14 +214,53 @@ window.onload = function() {
         }
     }
 
+    function addRegisterField() {
+        let parent = document.querySelector('.registration-add-input-js'),
+            btnAdd = document.querySelector('.registration-add-btn-js'),
+            newInput,
+            i = 1;
+
+            btnAdd.addEventListener('click', (e) => {
+                e.preventDefault();
+                i++;
+                if(i > 2) {
+                    btnAdd.style.cssText = `
+                        color: #8D9396;
+                    `;
+                }
+
+                if(i > 3) {
+                    btnAdd.style.cssText = `
+                        color: #8D9396;
+                    `;
+                    return false;
+                } else {
+                    newInput = document.createElement('input');
+                    newInput.classList.add('registration-input__form');
+                    newInput.setAttribute("type", "text");
+                    newInput.setAttribute("placeholder", "Вставте посилання");
+                    newInput.style.cssText = `
+                        margin-top: 10px;
+                    `;
+                    parent.appendChild(newInput);
+                    console.log(i);
+                }
+          
+            });
+    }
+
     function checkingBlocks() {
         let doctorChart = document.querySelector('#chart'),
             doctorChartChief = document.querySelector('#chart-chief'),
             chiefDoughnatChart = document.querySelector('#chief-doughnat-chart'),
-            editBtn = document.querySelector('.editing-btn-js');
+            editBtn = document.querySelector('.editing-btn-js'),
+            regFieldAddBtn = document.querySelector('.registration-add-btn-js');
         
         if (editBtn) {
             addEditing();
+        } 
+        if (regFieldAddBtn) {
+            addRegisterField();
         } 
         if (doctorChart) {
             barChart('#chart', [[67.8], [20.7], [15.4], [11.4]], ['#12D3CE', '#A2EEEC', '#A481DE', '#C6B7DF'], ['КТ', 'МРТ', 'Рентген', 'КЛТ'], ['Risk Level']);  

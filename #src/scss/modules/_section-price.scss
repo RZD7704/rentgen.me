@@ -8,11 +8,9 @@
     &__wgt {
         width: 100%;
         box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
-        border-radius: 0 0 12px 12px;
-        border-top: 9px solid transparent;
-        border-image: linear-gradient(to right, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 110%);
-        border-image-slice: 1;
+        border-radius: 12px 12px;
         margin-bottom: 20px;
+        overflow: hidden;
 
         &:first-child {
             @media (min-width: 992px) {
@@ -33,6 +31,10 @@
     }
 
     &__wgt-head {
+        border-top: 9px solid transparent;
+        border-image: linear-gradient(to right, rgba(215, 200, 240, 1) 15.28%, #ADC6F6, #12D3CE 110%);
+        border-image-slice: 1;
+
         display: flex;
         align-items: flex-end;
         justify-content: center;
