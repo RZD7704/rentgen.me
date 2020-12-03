@@ -330,10 +330,10 @@ window.onload = function() {
                 btnAdd.style.cssText = `
                     color: #8D9396;
                 `;
-                return false;
             }
 
             if(i > 3) {
+                return false;
             } else {
                 newInput = document.createElement('input');
                 newInput.classList.add('registration-input__form');
@@ -432,6 +432,7 @@ window.onload = function() {
 };
 
 jQuery( document ).ready(function($) {
+    $('.selectpicker').selectpicker();
     let recoveryModalBtn = $('.modal-js');
     $(recoveryModalBtn).click(function(e) {
         e.preventDefault();

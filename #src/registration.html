@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rentgen</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/Chart.css">
-    <link rel="stylesheet" href="css/style.css">
+    @@include('_links.html')
 </head>
    
 <body>
@@ -58,21 +54,21 @@
                                         <div class="registration-date pb-3">
                                             <div class="registration-date__headline">Дата народження:</div>
                                             <div class="registration-date__selects">
-                                                <select class="registration-date__select registration-date__select-date" name="select">
+                                                <select class="registration-date__select registration-date__select-date selectpicker" name="select">
                                                     <option value="value1">01</option> 
                                                     <option value="value2">02</option>
                                                     <option value="value3">03</option>
                                                     <option value="value3">Значение 4</option>
                                                     <option value="value3">Значение 5</option>
                                                 </select>
-                                                <select class="registration-date__select registration-date__select-mounth" name="select">
+                                                <select class="registration-date__select registration-date__select-mounth selectpicker" name="select">
                                                     <option value="value1">січень</option> 
                                                     <option value="value2">січень</option>
                                                     <option value="value3">січень</option>
                                                     <option value="value3">Значение 4</option>
                                                     <option value="value3">Значение 5</option>
                                                 </select>
-                                                <select class="registration-date__select registration-date__select-year" name="select">
+                                                <select class="registration-date__select registration-date__select-year selectpicker" name="select">
                                                     <option value="value1">1900</option> 
                                                     <option value="value2">1900</option>
                                                     <option value="value3">1900</option>
@@ -105,8 +101,8 @@
                                             <input class="registration-input__form" type="text" placeholder="Введіть пошту">
                                         </div>
                                         <div class="registration-checkbox">
-                                            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                            <label class="registration-checkbox__txt" for="happy">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
+                                            <input type="checkbox" class="custom-checkbox" id="happy2" name="happy" value="yes">
+                                            <label class="registration-checkbox__txt" for="happy2">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
                                         </div>
                                         <button class="registration-btn mx-auto d-block mt-4" type="submit">Зберегти</button>
                                     </form>
@@ -138,7 +134,7 @@
                                         </div>
                                         <div class="registration-input pb-3">
                                             <div class="registration-input__headline">Медична інформаційна система</div>
-                                            <select class="registration-selects__select ml-0 w-100" name="select">
+                                            <select class="registration-selects__select ml-0 w-100 selectpicker" name="select">
                                                 <option disabled selected>Оберіть</option>
                                                 <option value="value1">E67890</option> 
                                                 <option value="value2">E67890</option>
@@ -157,7 +153,7 @@
                                             <h2 class="general-head__title">Про медичний центр</h2>
                                         </div>
                                         <div class="registration-selects pb-3">
-                                            <select class="registration-selects__select" name="select">
+                                            <select class="registration-selects__select selectpicker w-50" name="select">
                                                 <option disabled selected>Оберіть область</option>
                                                 <option value="value1">Значение 1</option> 
                                                 <option value="value2">Значение 2</option>
@@ -165,7 +161,7 @@
                                                 <option value="value3">Значение 4</option>
                                                 <option value="value3">Значение 5</option>
                                             </select>
-                                            <div class="registration-input">
+                                            <div class="registration-input w-50">
                                                 <input class="registration-input__form" type="tel" placeholder="Введіть місто">
                                             </div>
                                         </div>
@@ -185,8 +181,8 @@
                                             <input class="registration-input__form" type="text" placeholder="Введіть пошту">
                                         </div>
                                         <div class="registration-checkbox">
-                                            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                            <label class="registration-checkbox__txt" for="happy">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
+                                            <input type="checkbox" class="custom-checkbox" id="happy1" name="happy" value="yes">
+                                            <label class="registration-checkbox__txt" for="happy1">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
                                         </div>
                                         <button class="registration-btn mx-auto d-block mt-4" type="submit">Зберегти</button>
                                     </form>

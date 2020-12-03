@@ -1138,7 +1138,7 @@ body {
 .price__wgt-cols {
   display: flex;
   justify-content: space-between;
-  padding: 0 35px;
+  padding: 0 35px 10px 35px;
 }
 
 .price__wgt-col--headline {
@@ -3048,13 +3048,11 @@ body {
 
 .registration-selects__select {
   border: 1px solid #8D9396;
-  width: 50%;
   border-radius: 5px;
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.01em;
-  color: #1A2828;
-  padding: 10px 15px;
+  color: #1A2828 !important;
 }
 
 .registration-selects__select:first-child {
@@ -3063,6 +3061,49 @@ body {
 
 .registration-selects__select:last-child {
   margin-left: 15px;
+}
+
+.registration-selects__select:last-child .dropdown-menu.show {
+  right: 0;
+  left: auto !important;
+}
+
+.registration-selects__select .btn {
+  background: #fff !important;
+  height: 100%;
+  border: none;
+  color: #1A2828 !important;
+}
+
+.registration-selects__select .btn:active {
+  background: #fff !important;
+}
+
+.registration-selects__select .btn:focus {
+  background: #fff;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none !important;
+}
+
+.registration-selects__select .btn::after {
+  color: #C4C4C4;
+}
+
+.registration-selects__select .filter-option {
+  display: flex;
+  align-items: center;
+}
+
+.registration-selects__select .dropdown-item:hover {
+  color: #097B79;
+  background: rgba(18, 211, 206, 0.1);
+}
+
+.registration-selects__select .dropdown-item.active,
+.registration-selects .dropdown-item:active {
+  color: #FFFFFF;
+  background: #12D3CE;
 }
 
 .registration-checkbox__txt {
@@ -3160,7 +3201,6 @@ body {
   color: #1A2828;
   border: 1px solid #8D9396;
   border-radius: 5px;
-  padding: 5px;
   margin-right: 15px;
 }
 
@@ -3168,16 +3208,52 @@ body {
   margin-right: 0;
 }
 
+.registration-date__select:last-child .dropdown-menu.show {
+  right: 0;
+  left: auto !important;
+}
+
+.registration-date__select .btn {
+  background: #fff !important;
+  border: none;
+}
+
+.registration-date__select .btn:active {
+  background: #fff !important;
+}
+
+.registration-date__select .btn:focus {
+  background: #fff;
+  outline: none !important;
+  outline-offset: 0;
+  box-shadow: none !important;
+}
+
+.registration-date__select .btn::after {
+  color: #C4C4C4;
+}
+
+.registration-date__select .dropdown-item:hover {
+  color: #097B79;
+  background: rgba(18, 211, 206, 0.1);
+}
+
+.registration-date__select .dropdown-item.active,
+.registration-date .dropdown-item:active {
+  color: #FFFFFF;
+  background: #12D3CE;
+}
+
 .registration-date__select-date {
-  width: 20%;
+  width: 20% !important;
 }
 
 .registration-date__select-mounth {
-  width: 40%;
+  width: 40% !important;
 }
 
 .registration-date__select-year {
-  width: 40%;
+  width: 40% !important;
 }
 
 .registration-add-field__btn {
@@ -3530,7 +3606,7 @@ body {
   }
 
   .price__wgt-cols {
-    padding: 0 175px;
+    padding: 0 175px 10px 175px;
   }
 
   .doctors-wgt__photo {
@@ -3780,7 +3856,7 @@ body {
   }
 
   .price__wgt-cols {
-    padding: 0 90px;
+    padding: 0 90px 10px 90px;
   }
 
   .doctors-wgt {
@@ -4129,20 +4205,19 @@ body {
   }
 
   .registration-date__select {
-    padding: 10px;
     font-size: 16px;
   }
 
   .registration-date__select-date {
-    width: 15%;
+    width: 15% !important;
   }
 
   .registration-date__select-mounth {
-    width: 25%;
+    width: 25% !important;
   }
 
   .registration-date__select-year {
-    width: 25%;
+    width: 25% !important;
   }
 
   .modal-form__input-headline {

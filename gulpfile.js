@@ -15,6 +15,7 @@ let path = {
             "node_modules/bootstrap/dist/css/bootstrap.css",
             "node_modules/chart.js/dist/Chart.css",
             "node_modules/swiper/swiper-bundle.min.css",
+            "node_modules/bootstrap-select/dist/css/bootstrap-select.min.css",
             source_folder + "/scss/style.scss"
         ],
         js: [
@@ -23,6 +24,7 @@ let path = {
             "node_modules/chart.js/dist/Chart.js",
             "node_modules/swiper/swiper-bundle.min.js",
             "node_modules/inputmask/dist/jquery.inputmask.js",
+            "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js",
             source_folder + "/js/script.js"
         ],
         img:  source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",

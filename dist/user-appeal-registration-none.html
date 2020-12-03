@@ -6,10 +6,13 @@
     <title>Rentgen</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/Chart.css">
-    <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/Chart.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
    
 <body>
@@ -85,21 +88,21 @@
                                 <div class="registration-date pb-3">
                                     <div class="registration-date__headline">Дата народження:</div>
                                     <div class="registration-date__selects">
-                                        <select class="registration-date__select registration-date__select-date" name="select">
+                                        <select class="registration-date__select registration-date__select-date selectpicker" name="select">
                                             <option value="value1">01</option> 
                                             <option value="value2">02</option>
                                             <option value="value3">03</option>
                                             <option value="value3">Значение 4</option>
                                             <option value="value3">Значение 5</option>
                                         </select>
-                                        <select class="registration-date__select registration-date__select-mounth" name="select">
+                                        <select class="registration-date__select registration-date__select-mounth selectpicker" name="select">
                                             <option value="value1">січень</option> 
                                             <option value="value2">січень</option>
                                             <option value="value3">січень</option>
                                             <option value="value3">Значение 4</option>
                                             <option value="value3">Значение 5</option>
                                         </select>
-                                        <select class="registration-date__select registration-date__select-year" name="select">
+                                        <select class="registration-date__select registration-date__select-year selectpicker" name="select">
                                             <option value="value1">1900</option> 
                                             <option value="value2">1900</option>
                                             <option value="value3">1900</option>
@@ -112,7 +115,7 @@
                                     <h2 class="general-head__title">Основні дані</h2>
                                 </div>
                                 <div class="registration-selects pb-3">
-                                    <select class="registration-selects__select" name="select">
+                                    <select class="registration-selects__select selectpicker w-50" name="select">
                                         <option disabled selected>Оберіть область</option>
                                         <option value="value1">Значение 1</option> 
                                         <option value="value2">Значение 2</option>
@@ -120,7 +123,7 @@
                                         <option value="value3">Значение 4</option>
                                         <option value="value3">Значение 5</option>
                                     </select>
-                                    <select class="registration-selects__select" name="select">
+                                    <select class="registration-selects__select selectpicker w-50" name="select">
                                         <option disabled selected>Оберіть область</option>
                                         <option value="value1">Значение 1</option> 
                                         <option value="value2">Значение 2</option>
@@ -187,7 +190,7 @@
     <div class="footer_theme_white">
         <div class="container">
             <div class="footer-question">
-                <a class="footer-question__link" href="user-profile-comments.html">Часті запитання</a>
+                <a class="footer-question__link" href="user-appeal-registration.html">Часті запитання</a>
             </div>
         </div>
     </div>
@@ -298,6 +301,7 @@
 </div>
     <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 <script src="js/Chart.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>

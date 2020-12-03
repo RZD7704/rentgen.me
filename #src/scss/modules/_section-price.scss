@@ -60,14 +60,14 @@
     &__wgt-cols {
         display: flex;
         justify-content: space-between;
-        padding: 0 35px;
+        padding: 0 35px 10px 35px;
 
         @media (min-width: 768px) {
-            padding: 0 175px;
+            padding: 0 175px 10px 175px;
         }
 
         @media (min-width: 992px) {
-            padding: 0 90px;
+            padding: 0 90px 10px 90px;
         }
     }
 
