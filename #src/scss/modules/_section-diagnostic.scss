@@ -17,12 +17,13 @@
         font-size: 62px;
         letter-spacing: 0.04em;
         color: rgba(164, 129, 222, 0.15);
-        padding-bottom: 5px;
     }
 
     &__content-txt {
+        font-family: $Playfair;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 18px;
         letter-spacing: 0.02em;
         color: #12D3CE;
     }
@@ -35,6 +36,7 @@
     &__photo-img {
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 }
 
