@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/Chart.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+   
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav__phone">
+                    <a class="header-nav__phone-link" href="tel:+380505676767">
+                        <svg class="header-nav__phone-link--icon">
+                            <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                        </svg>
+                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                    </a>
+                </div>
+                <div class="header-nav__log">
+                    <div class="dropdown header-dropdown">
+                        <!-- <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a> -->
+                        <a class="header-nav__log-btn header-nav__log-btn_persone" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="header-nav__log-btn--img img-fluid" src="img/doctor-image-2.png" alt="Photo">
+                        </a>
+
+                        <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                            <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                            <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="main">
+            <section class="section section-archive-rules">
+                <div class="container">
+                    <div class="general-head pt-4">
+                        <h2 class="general-head__title">Правила використання сайту</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                    <h3 class="rules-headline">
+                        Введення даних
+                    </h3>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                    <h3 class="rules-headline">
+                        Про створення заявки
+                    </h3>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                    <div class="rules-wgt">
+                        <h3 class="rules-wgt__title">Заголовок</h3>
+                        <p class="rules-wgt__txt">Сучасна цифрова рентген-діагностика дозволяє провести практично будь-який спектр рентгенологічних досліджень, який використовується в амбулаторній ланці, з мінімальним навантаженням на організм людини. </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+    <div class="footer_theme_grey">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__wgt d-flex flex-column justify-content-between">
+                    <a href="index.html">
+                        <img class="footer__wgt-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                    </a>
+                    <div class="footer__wgt-txt">©TM 2020. All right reserved.</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Контакти</div>
+                    <a class="footer__wgt-link" href="tel:+380502770153">+38 (050) 277 01 53</a>
+                    <a class="footer__wgt-link" href="#">Телеграм</a>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Локація</div>
+                    <div class="footer__wgt-txt">Полтава, Гоголя, 12</div>
+                    <div class="footer__wgt-txt">офіс 302</div>
+                </div>
+                <div class="footer__wgt">
+                    <div class="footer__wgt-title">Соціальні мережі</div>
+                    <a class="footer__wgt-link" href="#">Інстаграм</a>
+                    <a class="footer__wgt-link" href="#">Фейсбук</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_theme_white">
+        <div class="container">
+            <div class="footer-question">
+                <a class="footer-question__link" href="user-appeal-registration.html">Часті запитання</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade general-modal" id="logModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body general-modal__body">
+                <div class="general-modal__title pb-3">Вхід</div>
+                <form class="modal-form" action="#">
+                    <div class="modal-form__input pb-3">
+                        <div class="modal-form__input-headline">Логін</div>
+                        <input class="modal-form__input-field" type="text" placeholder="Введіть логін">
+                    </div>
+                    <div class="modal-form__input pb-4">
+                        <div class="modal-form__input-headline">Пароль</div>
+                        <input class="modal-form__input-field" type="password" placeholder="Введіть пароль">
+                    </div>
+                    <button class="modal-form__btn" type="submit">Увійти</button>
+                </form>  
+            </div>
+            <div class="general-modal__footer">
+                <div class="general-modal__footer-wgt pb-3">
+                    Немає аккаунту в Rengen.me?
+                    <a class="general-modal__footer-wgt--link" href="registration.html">Зареєструватися</a>
+                </div>
+                <div class="general-modal__footer-wgt pb-4">
+                    Забули пароль?
+                    <button type="button" class="modal-js general-modal__footer-wgt--link">Відновити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade general-modal" id="recoveryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog general-modal__dialog">
+        <div class="modal-content general-modal__content">
+            <div class="modal-header general-modal__header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="recovery-stage-js" data-stage="1">
+                <div class="modal-body general-modal__body">
+                    <div class="general-modal__title pb-3">Відновлення доступу</div>
+                    <form class="modal-form" action="#">
+                        <div class="modal-form__input pb-3">
+                            <div class="modal-form__input-headline">Логін або номер телефону</div>
+                            <input class="modal-form__input-field" type="text" placeholder="Введіть дані">
+                        </div>
+                        <div class="modal-form__txt pb-5">На ваші контактні дані буде відправлено код для відновлення доступу.</div>
+                        <button class="modal-form__btn recovery-send-btn" type="button">Надіслати</button>
+                    </form>  
+                </div>
+                <div class="general-modal__footer">
+                    <div class="general-modal__footer-wgt pb-3">
+                        <a class="general-modal__footer-wgt--link" href="registration.html">Повернутися назад</a>
+                    </div>
+                </div>
+            </div>
+            <div class="recovery-stage-js" style="display: none;" data-stage="2">
+                <div class="modal-body general-modal__body">
+                    <div class="general-modal__title pb-3">Відновлення доступу</div>
+                    <form class="modal-form" action="#">
+                        <div class="modal-form__input pb-3">
+                            <div class="modal-form__input-headline">Код з повідомлення</div>
+                            <input class="modal-form__input-field" type="text" placeholder="Введіть код">
+                        </div>
+                        <div class="modal-form__txt pb-5">На ваші контактні дані буде відправлено код для відновлення доступу.</div>
+                        <button class="modal-form__btn recovery-send-btn" type="button">Надіслати</button>
+                    </form>  
+                </div>
+                <div class="general-modal__footer">
+                    <div class="general-modal__footer-wgt pb-3">
+                        Не прийшов код? 
+                        <button class="general-modal__footer-wgt--link" type="button">Спробувати ще раз</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recovery-stage-js" style="display: none;" data-stage="3">
+                <div class="modal-body general-modal__body">
+                    <div class="general-modal__title pb-3">Відновлення доступу</div>
+                    <form class="modal-form" action="#">
+                        <div class="modal-form__input pb-3">
+                            <div class="modal-form__input-headline">Придумайте новий пароль</div>
+                            <input class="modal-form__input-field" type="text" placeholder="Введіть код">
+                        </div>
+                        <div class="modal-form__input pb-4">
+                            <div class="modal-form__input-headline">Повторіть пароль</div>
+                            <input class="modal-form__input-field" type="text" placeholder="Введіть код">
+                        </div>
+                        <button class="modal-form__btn" type="button">Надіслати</button>
+                    </form>  
+                </div>
+                <div class="general-modal__footer">
+                    <div class="general-modal__footer-wgt pb-3">
+                        Мінімум 6 символів на латиниці
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/Chart.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -24,7 +24,7 @@
         &:first-child {
             width: 100%;
             flex-direction: row;
-            align-items: flex-end;
+            // align-items: flex-end;
 
             @media (min-width: 768px) {
                 width: 50%;
