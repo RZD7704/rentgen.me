@@ -223,6 +223,10 @@ body {
   background: transparent;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+
 .general-head {
   padding-bottom: 15px;
   display: flex;
