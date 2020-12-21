@@ -1,5 +1,23 @@
 window.onload = function() {
     // @@include('chart-script.js')
+    function fixedHeader() {
+        var header = $('.js-header'),
+        cloneHeader = header.clone();
+
+        cloneHeader.addClass('header--fixed');
+        header.before(cloneHeader);
+
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                cloneHeader.addClass('header--is-show');
+            } else {
+                cloneHeader.removeClass('header--is-show');
+            }
+        });
+    }
+    fixedHeader();
+
     function barChart(id, data, color, label, labels) {
         var ctx = document.querySelector(id);
 

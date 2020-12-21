@@ -16,40 +16,117 @@
 </head>
 <body>
     <div class="content">
-        <header class="header">
-    <div class="container">
-        <div class="header__wrapper">
-            <div class="header-logo">
-                <a href="index.html">
-                    <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
-                </a>
-            </div>
+        <header class="header js-header">
+    <div class="header-theme-white">
+        <div class="container">
             <div class="header-nav">
-                <div class="header-nav__phone">
-                    <a class="header-nav__phone-link" href="tel:+380505676767">
-                        <svg class="header-nav__phone-link--icon">
-                            <use xlink:href="img/icons/icons.svg#phone-svg"></use>
-                        </svg>
-                        <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
-                    </a>
-                </div>
-                <div class="header-nav__log">
-                    <div class="dropdown header-dropdown">
-                        <!-- <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a> -->
-                        <a class="header-nav__log-btn header-nav__log-btn_persone" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="header-nav__log-btn--img img-fluid" src="img/doctor-image-2.png" alt="Photo">
+                <div class="header-nav__items">
+                    <div class="header-nav__item">
+                        <a class="header-nav__item-link" href="mailto:ecos.poltava@gmail.com">
+                            <svg class="header-nav__item-link--icon">
+                                <use xlink:href="img/icons/icons.svg#email-icon"></use>
+                            </svg>
+                            <span class="header-nav__item-link--num">ecos.poltava@gmail.com</span>
                         </a>
-
-                        <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
-                            <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
-                            <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
-                        </div>
-                      </div>
+                    </div>
+                    <div class="header-nav__item">
+                        <a class="header-nav__item-link" href="tel:+380505676767">
+                            <svg class="header-nav__item-link--icon">
+                                <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                            </svg>
+                            <span class="header-nav__item-link--num">+38 050-567-67-67</span>
+                        </a>
+                    </div>
                 </div>
+              
             </div>
         </div>
     </div>
+    <div class="header-theme-pink">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid header-container-fluid">
+                    <button class="burger-btn   navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img class="header-logo__photo" src="img/icons/icons.svg#logo" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header-nav d-lg-none">
+                      
+                        <div class="header-nav__log">
+                            <div class="dropdown header-dropdown">
+                                <!-- <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a> -->
+                                <a class="header-nav__log-btn header-nav__log-btn_persone" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="header-nav__log-btn--img img-fluid" src="img/doctor-image-2.png" alt="Photo">
+                                </a>
+        
+                                <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                                    <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                                    <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item header-nav-item">
+                                <a class="nav-link header-nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item header-nav-item">
+                                <a class="nav-link header-nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item header-nav-item dropdown">
+                                <a class="nav-link header-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item header-nav-item">
+                                <a class="nav-link header-nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                    <div class="header-nav d-none d-lg-flex">
+                        <!-- <div class="header-nav__phone">
+                            <a class="header-nav__phone-link" href="tel:+380505676767">
+                                <svg class="header-nav__phone-link--icon">
+                                    <use xlink:href="img/icons/icons.svg#phone-svg"></use>
+                                </svg>
+                                <span class="header-nav__phone-link--num">+38 050-567-67-67</span>
+                            </a>
+                        </div> -->
+                        <div class="header-nav__log">
+                            <div class="dropdown header-dropdown">
+                                <!-- <a class="header-nav__log-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Увійти</a> -->
+                                <a class="header-nav__log-btn header-nav__log-btn_persone" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="header-nav__log-btn--img img-fluid" src="img/doctor-image-2.png" alt="Photo">
+                                </a>
+        
+                                <div class="dropdown-menu header-dropdown__menu" aria-labelledby="dropdownMenuLink">
+                                    <button type="button" class="dropdown-item header-dropdown__item">Показники опрацювань</button>
+                                    <button type="button" class="dropdown-item header-dropdown__item" data-toggle="modal" data-target="#logModal">Мій кабінет</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
 </header>
+
+ 
 
         <main class="main">
             <section class="section section-single-diagnostic">
@@ -222,7 +299,11 @@
     </div>
 </div>
     <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
+<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/Chart.js"></script>
 <script src="js/swiper-bundle.min.js"></script>

@@ -24,15 +24,27 @@
     display: flex;
     align-items: center;
 
-    &__phone {
-        padding-right: 25px;
-
-        @media (min-width: 992px) {
-            padding-right: 70px;
-        }
+    &__items {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
-    &__phone-link {
+    &__item {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        // padding-right: 25px;
+
+        // @media (min-width: 992px) {
+        //     padding-right: 70px;
+        // }
+    }
+
+    &__item-link {
         font-weight: 300;
         font-size: 18px;
         letter-spacing: 0.01em;
@@ -89,14 +101,6 @@
 }
 
 .header-dropdown {
-    &__menu {
-        transform: translate3d(-115px, 28px, 0px) !important;
-
-        @media (min-width: 992px) {
-            transform: translate3d(-105px, 28px, 0px) !important;
-        }
-    }
-
     &__item {
         font-weight: 500;
         font-size: 12px;
