@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    @@include('_links.html')
+
+</head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <section class="section section-editing">
+                <div class="container">
+                    <div class="general-head pb-0">
+                        <h2 class="general-head__title">Редагування профілю</h2>
+                        <a class="general-head__btn" href="#">
+                            <svg class="general-head__btn-icon">
+                                <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
+                            </svg>
+                            Повернутися
+                        </a>
+                    </div>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування особистих данних</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">ПІБ</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування номеру телефону</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Номер телефону</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть новий">
+                                    </div>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування паролю</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Старий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Новий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Повторіть новий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

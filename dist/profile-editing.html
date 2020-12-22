@@ -130,10 +130,10 @@
  
 
         <main class="main">
-            <section class="section section-registration">
+            <section class="section section-editing">
                 <div class="container">
-                    <div class="general-head pt-1">
-                        <h2 class="general-head__title">Peєстрація</h2>
+                    <div class="general-head pb-0">
+                        <h2 class="general-head__title">Редагування профілю</h2>
                         <a class="general-head__btn" href="#">
                             <svg class="general-head__btn-icon">
                                 <use xlink:href="img/icons/icons.svg#arr-back-icon"></use>
@@ -141,100 +141,68 @@
                             Повернутися
                         </a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-10 col-xl-6 mx-auto">
-                            <div class="general-head pt-4 pb-3">
-                                <h2 class="general-head__title">Про пацієнта</h2>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування особистих данних</div>
                             </div>
-                            <form class="registration-content__form" action="#">
-                                <div class="registration-input pb-3">
-                                    <div class="registration-input__headline">ПІБ</div>
-                                    <input class="registration-input__form" type="text" placeholder="Введіть дані">
-                                </div>
-                                <div class="registration-gender pb-3">
-                                    <div class="registration-gender__btn">
-                                        <input id="radio-1" type="radio" name="radio" value="1" checked>
-                                        <label for="radio-1">чоловіча</label>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">ПІБ</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
                                     </div>
-                                     
-                                    <div class="registration-gender__btn">
-                                        <input id="radio-2" type="radio" name="radio" value="2">
-                                        <label for="radio-2">жіноча</label>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування номеру телефону</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Номер телефону</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть новий">
                                     </div>
-                                </div>
-                                <div class="registration-date pb-3">
-                                    <div class="registration-date__headline">Дата народження:</div>
-                                    <div class="registration-date__selects">
-                                        <select class="registration-date__select registration-date__select-date selectpicker" name="select">
-                                            <option value="value1">01</option> 
-                                            <option value="value2">02</option>
-                                            <option value="value3">03</option>
-                                            <option value="value3">Значение 4</option>
-                                            <option value="value3">Значение 5</option>
-                                        </select>
-                                        <select class="registration-date__select registration-date__select-mounth selectpicker" name="select">
-                                            <option value="value1">січень</option> 
-                                            <option value="value2">січень</option>
-                                            <option value="value3">січень</option>
-                                            <option value="value3">Значение 4</option>
-                                            <option value="value3">Значение 5</option>
-                                        </select>
-                                        <select class="registration-date__select registration-date__select-year selectpicker" name="select">
-                                            <option value="value1">1900</option> 
-                                            <option value="value2">1900</option>
-                                            <option value="value3">1900</option>
-                                            <option value="value3">Значение 4</option>
-                                            <option value="value3">Значение 5</option>
-                                        </select>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="editing-item">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="editing-item__title">Редагування паролю</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <form class="editing-form" action="#">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Старий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
                                     </div>
-                                </div>
-                                <div class="general-head pt-3 pb-3">
-                                    <h2 class="general-head__title">Основні дані</h2>
-                                </div>
-                                <div class="registration-selects pb-3">
-                                    <select class="registration-selects__select selectpicker w-50" name="select">
-                                        <option disabled selected>Оберіть область</option>
-                                        <option value="value1">Значение 1</option> 
-                                        <option value="value2">Значение 2</option>
-                                        <option value="value3">Значение 3</option>
-                                        <option value="value3">Значение 4</option>
-                                        <option value="value3">Значение 5</option>
-                                    </select>
-                                    <select class="registration-selects__select selectpicker w-50" name="select">
-                                        <option disabled selected>Оберіть область</option>
-                                        <option value="value1">Значение 1</option> 
-                                        <option value="value2">Значение 2</option>
-                                        <option value="value3">Значение 3</option>
-                                        <option value="value3">Значение 4</option>
-                                        <option value="value3">Значение 5</option>
-                                    </select>
-                                </div>
-                                <div class="registration-input pb-3">
-                                    <div class="registration-input__headline">Попередній діагноз</div>
-                                    <input class="registration-input__form" type="text" placeholder="Вкажіть попердній діагноз">
-                                </div>
-                                <div class="registration-add-field pb-5">
-                                    <div class="registration-input registration-add-input-js pb-3">
-                                        <div class="registration-input__headline">Посилання на діагностику</div>
-                                        <input class="registration-input__form registration-input-js" type="text" placeholder="Вставте посилання">
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Новий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
                                     </div>
-                                    <button class="registration-add-field__btn  registration-add-btn-js ml-auto d-block"  type="button">Додати текстове поле</button>
-                                </div>
-                                <div class="registration-checkbox">
-                                    <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
-                                    <label class="registration-checkbox__txt" for="happy">Погоджуюся з <a class="registration-checkbox__txt--link" href="#">правилами використання</a> сервісу </label>
-                                </div>
-                                <button class="registration-btn mx-auto d-block mt-4" type="submit">Зберегти</button>
-                            </form>
+                                    <div class="editing-input pb-3">
+                                        <div class="editing-input__headline">Повторіть новий пароль</div>
+                                        <input class="editing-input__form" type="text" placeholder="Введіть дані">
+                                    </div>
+                                    <button class="registration-btn mx-auto d-block mt-2" type="submit">Зберегти</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                    
-               </div>
+                </div>
             </section>
-         
         </main>
     </div>
-
+    
     <footer class="footer">
     <div class="footer_theme_grey">
         <div class="container">
@@ -386,6 +354,5 @@
 <script src="js/Chart.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
