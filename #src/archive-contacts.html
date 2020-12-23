@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentgen</title>
+    
+    @@include('_links.html')
+
+</head>
+   
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main">
+            <section class="section section-contacts">
+                <div class="container">
+                    <div class="general-head pt-1">
+                        <h2 class="general-head__title">Контактна інформація</h2>
+                    </div>
+                    <div class="contacts-info">
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Адреса</div>
+                            <div class="contacts-info__item-txt">Полтава, вулиця Гоголя, 12</div>
+                            <div class="contacts-info__item-txt">офіс 302</div>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Контакти</div>
+                            <a class="contacts-info__item-link" href="tel:+380502770153">+38 (090) 456 87 80</a>
+                            <a class="contacts-info__item-link" href="mailto:@gmail.com">@gmail.com</a>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Cоціальні мережі</div>
+                            <a class="contacts-info__item-link" href="#">
+                                <svg class="contacts-info__item-link--icon">
+                                    <use xlink:href="img/icons/icons.svg#instagram-contacts-icon"></use>
+                                </svg>
+                                Інстаграм
+                            </a>
+                            <a class="contacts-info__item-link" href="#">
+                                <svg class="contacts-info__item-link--icon">
+                                    <use xlink:href="img/icons/icons.svg#facebook-contacts-icon"></use>
+                                </svg>
+                                Фейсбук
+                            </a>
+                        </div>
+                        <div class="contacts-info__item">
+                            <a class="text-center" href="index.html">
+                                <img class="contacts-info__item-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="general-head pt-1">
+                        <h2 class="general-head__title">Виникли питання? Напишіть нам</h2>
+                    </div>
+                    <form class="contacts-form" action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="contacts-input pb-3">
+                                    <div class="contacts-input__headline">ПІБ</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Введіть ПІБ">
+                                </div>
+                                <div class="contacts-input pb-3">
+                                    <div class="contacts-input__headline">Електронна пошта</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Введіть пошту">
+                                </div>
+                                <div class="contacts-input">
+                                    <div class="contacts-input__headline">Номер телефону</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Напишіть номер телефону">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <textarea class="contacts-textarea" placeholder="Ваші пропозиції" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button class="contacts-form__btn main-btn" type="button">Відправити</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    @@include('_footer.html')
+    @@include('_scripts.html')
+
+</body>
+</html>

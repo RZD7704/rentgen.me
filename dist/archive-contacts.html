@@ -130,184 +130,72 @@
  
 
         <main class="main">
-            <div class="section section-medcenter-profile profile-mask">
+            <section class="section section-contacts">
                 <div class="container">
                     <div class="general-head pt-1">
-                        <h2 class="general-head__title">Мій профіль</h2>
-                        <button class="general-head__btn editing-btn-js background-transparent" type="button">
-                            <svg class="general-head__btn-icon">
-                                <use xlink:href="img/icons/icons.svg#editing-icon"></use>
-                            </svg>
-                            Редагувати
-                        </button>
+                        <h2 class="general-head__title">Контактна інформація</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <div class="profile-mask__mobile-head-wrapper">
-                                <div class="profile-mask__photo">
-                                    <img class="profile-mask__photo-img" src="img/medcenter-image-1.png" alt="User Photo">
-                                </div>
-                                <div class="profile-mask__head d-lg-none">
-                                    <div class="profile-mask__head-item">
-                                        <h3 class="profile-mask__head-name pb-3">Медичний центр “Мій лікар”</h3>
-                                        <div class="profile-mask__head-item d-none d-md-block d-lg-none">
-                                            <a class="main-btn" href="#">Створити звернення</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="profile-mask__head-item d-flex d-md-none justify-content-center pb-3">
-                                <a class="main-btn" href="#">Створити звернення</a>
-                            </div>
-                            <div class="profile-mask__nav d-none d-lg-flex">
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
-                                        </svg>
-                                        Мої звернення
-                                        <span class="profile-mask__nav-link--num">(4)</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-balance.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
-                                        </svg>
-                                        Мій баланс
-                                        <span class="profile-mask__nav-link--num">800$</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#message-icon"></use>
-                                        </svg>
-                                        Коментарі
-                                        <span class="profile-mask__nav-link--num">(1)</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="medcenter-profile-tarifs.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#tarifs-icon"></use>
-                                        </svg>
-                                        Тарифи
-                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="contacts-info">
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Адреса</div>
+                            <div class="contacts-info__item-txt">Полтава, вулиця Гоголя, 12</div>
+                            <div class="contacts-info__item-txt">офіс 302</div>
                         </div>
-                        <div class="col-12 col-lg-8">
-                            <div class="profile-mask__head d-none d-lg-flex">
-                                <div class="profile-mask__head-item">
-                                    <h3 class="profile-mask__head-name">Медичний центр “Мій лікар”</h3>
-                                </div>
-                                <div class="profile-mask__head-item">
-                                    <a class="main-btn" href="#">Створити звернення</a>
-                                </div>
-                            </div>
-                            <!-- <div class="profile-warning">
-                                <div class="warning-status">
-                                    <svg class="warning-status__icon">
-                                        <use xlink:href="img/icons/icons.svg#warning-icon"></use>
-                                    </svg>
-                                    В порядку черги
-                                </div>
-                                <div class="warning-message">
-                                    <div class="warning-message__headline">Зверніть увагу! </div>
-                                    <div class="warning-message__description">Щоб розпочати роботу з сервісом <a class="warning-message__description--link" href="#">rentgen.me</a> потрібно <a class="warning-message__description--link" href="#">грати на бубні</a> або зателефонувати за номером <a class="warning-message__description--link" href="tel:+380663107870">+38 066 310 78 70</a> для укладення договору.</div>
-                                </div>
-                            </div> -->
-                            <div class="profile-mask__list">
-                                <div class="profile-mask__list-edited">
-                                    <div class="profile-mask__list-wgt">
-                                        <div class="profile-mask__list-headline">Місто:</div>
-                                        <div class="profile-mask__list-desc">Полтава</div>
-                                    </div>
-                                    <div class="profile-mask__list-wgt">
-                                        <div class="profile-mask__list-headline">Адреса:</div>
-                                        <div class="profile-mask__list-desc">м. Полтава вул. Сінна 3 </div>
-                                    </div>
-                                    <div class="profile-mask__list-wgt">
-                                        <div class="profile-mask__list-headline">ПІБ директора:</div>
-                                        <div class="profile-mask__list-desc">Матковський Юрій Володимирович</div>
-                                    </div>
-                                    <div class="profile-mask__list-wgt">
-                                        <div class="profile-mask__list-headline">ІПН або ЄДРПОУ</div>
-                                        <div class="profile-mask__list-desc">404956789</div>
-                                    </div>
-                                    <div class="profile-mask__list-wgt">
-                                        <div class="profile-mask__list-headline">IBAN</div>
-                                        <div class="profile-mask__list-desc">E67890</div>
-                                    </div>
-                                    <div class="profile-mask__list-wgt profile-mask__list-wgt_column">
-                                        <div class="profile-mask__list-headline max-width pb-2">Медична інформаційна система</div>
-                                        <div class="profile-mask__list-desc"> <a class="profile-mask__list-desc--link" href="#">E67890</a></div>
-                                    </div>
-                                </div>
-                                <div class="profile-mask__list-editing">
-                                </div>
-                            </div>
-                            <div class="profile-mask__nav d-lg-none pt-2">
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-appeal.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#appeal-icon"></use>
-                                        </svg>
-                                        Мої звернення
-                                        <span class="profile-mask__nav-link--num">(4)</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-balance.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#balance-icon"></use>
-                                        </svg>
-                                        Мій баланс
-                                        <span class="profile-mask__nav-link--num">800$</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link" href="medcenter-profile-comments.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#message-icon"></use>
-                                        </svg>
-                                        Коментарі
-                                        <span class="profile-mask__nav-link--num">(1)</span>
-                                    </a>
-                                </div>
-                                <div class="profile-mask__nav-item">
-                                    <a class="profile-mask__nav-link active" href="medcenter-profile-tarifs.html">
-                                        <svg class="profile-mask__nav-link--icon">
-                                            <use xlink:href="img/icons/icons.svg#tarifs-icon"></use>
-                                        </svg>
-                                        Тарифи
-                                        <!-- <span class="profile-mask__nav-link--num">(4)</span> -->
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="mask-tarifs">
-                                <div class="mask-tarifs__services">
-                                    <div class="mask-tarifs__services-title">Послуга</div>
-                                    <div class="mask-tarifs__services-name">КТ</div>
-                                    <div class="mask-tarifs__services-name">МРТ</div>
-                                    <div class="mask-tarifs__services-name">Рентген</div>
-                                </div>
-                                <div class="mask-tarifs__price">
-                                    <div class="mask-tarifs__price-title">Ціна</div>
-                                    <div class="mask-tarifs__price-num">800</div>
-                                    <div class="mask-tarifs__price-num">1500</div>
-                                    <div class="mask-tarifs__price-num">200</div>
-                                </div>
-                            </div>
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Контакти</div>
+                            <a class="contacts-info__item-link" href="tel:+380502770153">+38 (090) 456 87 80</a>
+                            <a class="contacts-info__item-link" href="mailto:@gmail.com">@gmail.com</a>
+                        </div>
+                        <div class="contacts-info__item">
+                            <div class="contacts-info__item-headline">Cоціальні мережі</div>
+                            <a class="contacts-info__item-link" href="#">
+                                <svg class="contacts-info__item-link--icon">
+                                    <use xlink:href="img/icons/icons.svg#instagram-contacts-icon"></use>
+                                </svg>
+                                Інстаграм
+                            </a>
+                            <a class="contacts-info__item-link" href="#">
+                                <svg class="contacts-info__item-link--icon">
+                                    <use xlink:href="img/icons/icons.svg#facebook-contacts-icon"></use>
+                                </svg>
+                                Фейсбук
+                            </a>
+                        </div>
+                        <div class="contacts-info__item">
+                            <a class="text-center" href="index.html">
+                                <img class="contacts-info__item-logo" src="img/icons/icons.svg#logo" alt="Logo">
+                            </a>
                         </div>
                     </div>
+                    <div class="general-head pt-1">
+                        <h2 class="general-head__title">Виникли питання? Напишіть нам</h2>
+                    </div>
+                    <form class="contacts-form" action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="contacts-input pb-3">
+                                    <div class="contacts-input__headline">ПІБ</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Введіть ПІБ">
+                                </div>
+                                <div class="contacts-input pb-3">
+                                    <div class="contacts-input__headline">Електронна пошта</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Введіть пошту">
+                                </div>
+                                <div class="contacts-input">
+                                    <div class="contacts-input__headline">Номер телефону</div>
+                                    <input class="contacts-input__form" type="text" placeholder="Напишіть номер телефону">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <textarea class="contacts-textarea" placeholder="Ваші пропозиції" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <button class="contacts-form__btn main-btn" type="button">Відправити</button>
+                    </form>
                 </div>
-            </div>
+            </section>
         </main>
     </div>
-
 
     <footer class="footer">
     <div class="footer_theme_grey">
