@@ -1193,6 +1193,9 @@ body {
 }
 
 .price__wgt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   box-shadow: 0px 0px 1px rgba(151, 151, 151, 0.37), 0px 1px 1px rgba(196, 196, 196, 0.25), 0px 0px 3px rgba(151, 151, 151, 0.27);
   border-radius: 12px 12px;
@@ -1269,6 +1272,39 @@ body {
 .price__wgt-btn:hover {
   color: #fff;
   background: #12D3CE;
+}
+
+.price__wgt-content {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.price__wgt-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #12D3CE;
+  padding-bottom: 20px;
+}
+
+.price__wgt-link {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #8D9396;
+  background: #f1f1f1;
+  border-radius: 360px;
+  padding: 7px 15px;
+  transition: all .5s;
+}
+
+.price__wgt-link:hover {
+  background: #eceaea;
+  color: #8D9396;
 }
 
 .doctors-wgt {
@@ -1942,6 +1978,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #A481DE;
+  transition: all .5s;
 }
 
 .single-diagnostic-foot__nav-btn:first-child {
@@ -1949,7 +1986,7 @@ body {
 }
 
 .single-diagnostic-foot__nav-btn:hover {
-  color: #A481DE;
+  color: #8261b6;
 }
 
 .single-doctors__row {
@@ -2051,6 +2088,58 @@ body {
 
 .single-questions__nav-btn:last-child {
   margin-right: 0;
+}
+
+.single-services-item {
+  border-bottom: 3px solid #F5F5F5;
+  padding-bottom: 25px;
+  margin-top: 20px;
+}
+
+.single-services-item__headline {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.06em;
+  color: #363636;
+  padding-bottom: 20px;
+}
+
+.single-services-item__txt {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.single-services-foot {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.single-services-foot__nav-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-services-foot__nav-btn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #A481DE;
+  transition: all .5s;
+}
+
+.single-services-foot__nav-btn:first-child {
+  margin-right: 50px;
+}
+
+.single-services-foot__nav-btn:hover {
+  color: #391a6b;
 }
 
 .mask-appeal__wgt {
@@ -3918,6 +4007,10 @@ body {
     width: auto;
   }
 
+  .single-services-foot__nav-btns {
+    width: auto;
+  }
+
   .mask-appeal__points-item {
     margin-bottom: 0;
   }
@@ -4095,6 +4188,10 @@ body {
     padding: 0 90px 10px 90px;
   }
 
+  .price__wgt-title {
+    font-size: 22px;
+  }
+
   .doctors-wgt {
     padding: 10px 35px 10px 10px;
   }
@@ -4246,6 +4343,14 @@ body {
   .single-questions__nav-btn {
     font-size: 16px;
     margin-right: 20px;
+  }
+
+  .single-services-item__headline {
+    font-size: 32px;
+  }
+
+  .single-services-item__txt {
+    font-size: 16px;
   }
 
   .mask-appeal__wgt {
