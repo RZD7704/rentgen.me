@@ -23,7 +23,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "^4.5.3",
     "bootstrap-select": "^1.13.18",
     "chart.js": "^2.9.4",
     "inputmask": "^5.0.5",

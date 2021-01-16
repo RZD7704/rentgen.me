@@ -1945,7 +1945,8 @@ body {
 
 .contacts-form__btn {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
 }
 
@@ -4333,7 +4334,7 @@ body {
   }
 
   .price__wgt-cols {
-    padding: 0 90px 10px 90px;
+    padding: 0 50px 10px 50px;
   }
 
   .price__wgt-title {
@@ -4402,6 +4403,7 @@ body {
 
   .contacts-form__btn {
     margin-left: auto;
+    margin-right: 0;
   }
 
   .single-news-head {
